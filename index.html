@@ -11,6 +11,17 @@
   <link rel="icon" href="src/assets/images/favicon.ico" />
   <!-- Site Title -->
   <link rel="stylesheet" href="./output/tailwind.css" />
+  <!-- <style>
+    .snap-x {
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .snap-start {
+      scroll-snap-align: start;
+    }
+  </style> -->
 </head>
 
 <body>
@@ -84,6 +95,41 @@
     </div>
   </nav>
 
+  <div class="flex flex-col items-center text-white font-bold uppercase">
+    <div class="w-full bg-white rounded overflow-x-hidden flex snap-x slider-parent" style="height: 70vh">
+      <div class="snap-start w-full h-full flex items-center justify-center flex-shrink-0 bg-blue-600" id="slide-1">
+        Slide 1
+      </div>
+      <div class="snap-start w-full h-full flex items-center justify-center flex-shrink-0 bg-green-600" id="slide-2">
+        Slide 2
+      </div>
+      <div class="snap-start w-full h-full flex items-center justify-center flex-shrink-0 bg-red-600" id="slide-3">
+        Slide 3
+      </div>
+      <div class="snap-start w-full h-full flex items-center justify-center flex-shrink-0 bg-green-600" id="slide-4">
+        Slide 4
+      </div>
+      <div class="snap-start w-full h-full flex items-center justify-center flex-shrink-0 bg-purple-600" id="slide-5">
+        Slide 5
+      </div>
+      <div class="snap-start w-full h-full flex items-center justify-center flex-shrink-0 bg-indigo-600" id="slide-6">
+        Slide 6
+      </div>
+    </div>
+
+    <div class="flex justify-evenly mt-3 w-full space-x-1" id="sliderNav">
+      <a data-slide-key="1" class="active" href="#slide-1">1</a>
+      <a data-slide-key="2" class="" href="#slide-2">2</a>
+      <a data-slide-key="3" class="" href="#slide-3">3</a>
+      <a data-slide-key="4" class="" href="#slide-4">4</a>
+      <a data-slide-key="5" class="" href="#slide-5">5</a>
+      <a data-slide-key="6" class="" href="#slide-6">6</a>
+    </div>
+  </div>
+
+  <a class="slider-button next border p-2 block bg-green-300" href="#">Next</a>
+  <a class="slider-button back border p-2 block bg-blue-300" href="#">Back</a>
+
 
   <script src="./src/assets/js/main.js"></script>
 
@@ -95,6 +141,36 @@
         mobileMenu.classList.toggle("hidden");
       });
     });
+  </script>
+
+  <script>
+    let buttons = document.querySelectorAll(".slider-button");
+    let counter = 1;
+    let numberOfSlides = document.querySelector(".slider-parent").childElementCount;
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        if (button.classList.contains("next")) {
+          counter++;
+          if (counter > numberOfSlides) {
+            counter = 1;
+          }
+          button.href = `#slide-${counter}`;
+          let slide = document.querySelector(`[data-slide-key="${counter}"]`)
+          // slide.style.backgroundColor = "red"
+          // slide.previousSibling.style.backgroundColor = "gray"
+          slide.classList.toggle("bg-green-600")
+
+        } else if (button.classList.contains("back")) {
+          counter--
+          if (counter < 1) {
+            counter = numberOfSlides
+          }
+          button.href = `#slide-${counter}`
+        }
+      });
+    });
+
   </script>
 
 </body>
