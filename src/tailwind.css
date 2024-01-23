@@ -1,3 +1,120 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  /* primary theme */
+  --theme-color: hsl(0, 75%, 55%);
+
+  /* page color */
+  --background-primary: hsl(0, 0%, 100%);
+  --background-secondary: hsl(0, 0%, 95%);
+
+  /* icons color */
+  --accent-color: var(--theme-color);
+
+  /* text color */
+  --body-color: hsl(0, 0%, 15%);
+  --body-light-color: hsl(207, 10%, 22%);
+  --body-lighter-color: hsl(0, 0%, 33%);
+  --body-lightest-color: hsl(0, 0%, 15%);
+
+  /* whitish text color */
+  --body-off-color: hsl(0, 0%, 95%);
+  --body-off-light-color: hsl(0, 0%, 63%);
+  --body-white-color: hsl(0, 0%, 100%);
+
+  /* card background */
+  --card-header-color: hsl(0, 0%, 89%);
+  --card-body-color: hsl(0, 0%, 96%);
+  --card-blur-color: hsl(0, 0%, 96%);
+  --card-border-color: hsl(0, 0%, 92%);
+
+  /* buttons */
+  --button-color: var(--card-header-color);
+  --button-color-light: hsl(0, 0%, 95%);
+  --button-color-hover: var(--accent-color);
+  --button-color-active: hsl(0, 100%, 38%);
+
+  /* un-categorized */
+  --theme-1: rgb(226, 54, 54);
+  --theme-2: hsl(0, 100%, 38%);
+  --theme-3: hsl(207, 10%, 22%);
+  --theme-4: hsl(0, 0%, 96%);
+  --theme-5: hsl(0, 0%, 95%);
+
+  --shade-1: hsl(0, 0%, 16%);
+  --shade-2: hsl(0, 0%, 33%);
+  --shade-3: hsl(0, 0%, 62%);
+  --shade-4: hsl(0, 0%, 89%);
+
+  /* font styles */
+  --header-font-size: 3.75rem;
+  --h1-font-size: 2.875rem;
+  --h2-font-size: 2.375rem;
+  --h3-font-size: 2rem;
+  --h4-font-size: 1.75rem;
+  --sub-header-font-size: 1.5rem;
+  --btn-font-size: 1rem;
+  --paragraph-font-size: 1rem;
+  --pre-header-font-size: 0.875rem;
+  --body-font-size: 0.75rem;
+
+  /* font weights */
+  --header-font-weight: 700;
+  --h1-font-weight: 600;
+  --h2-font-weight: 600;
+  --h3-font-weight: 600;
+  --h4-font-weight: 500;
+  --sub-header-font-weight: 600;
+  --btn-font-weight: 500;
+  --paragraph-font-weight: 600;
+  --pre-header-font-weight: 400;
+  --body-font-weight: 400;
+
+  /* line height */
+  --header-line-height: 1;
+  --h1-line-height: 1;
+  --h2-line-height: 1.2;
+  --h3-line-height: 1.2;
+  --h4-line-height: 2rem;
+  --sub-header-line-height: 1.75rem;
+  --btn-line-height: 1.5rem;
+  --paragraph-line-height: 1.5rem;
+  --pre-header-line-height: 1.25rem;
+  --body-line-height: 1rem;
+
+  /* letter spacing */
+  --header-letter-spacing: normal;
+  --h1-letter-spacing: normal;
+  --h2-letter-spacing: normal;
+  --h3-letter-spacing: normal;
+  --h4-letter-spacing: normal;
+  --sub-header-letter-spacing: normal;
+  --btn-letter-spacing: normal;
+  --paragraph-letter-spacing: normal;
+  --pre-header-letter-spacing: normal;
+  --body-letter-spacing: normal;
+
+  /* custom shadow */
+  --custom-box-shadow: 0px 17px 30px 0px rgba(50, 56, 61, 0.3);
+}
+
+@layer utilities {
+  .min-h-screen {
+    min-height: 80vh;
+  }
+  @supports (min-height: 100dvh) {
+    .min-h-screen {
+      min-height: 100dvh;
+    }
+  }
+  .h-screen {
+    height: 80vh;
+  }
+  @supports (height: 100dvh) {
+    .h-screen {
+      height: 100dvh;
+    }
+  }
+}
