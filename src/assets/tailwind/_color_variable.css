@@ -1,0 +1,14 @@
+:root {
+  --body-font-family: "Sarabun", sans-serif;
+  --heading-font-family: "Oxanium", sans-serif;
+
+  --hover-color: #ff6b00;
+  --body-color: #454545;
+  --heading-color: #001528;
+  --primary-color: #00a79a;
+  --secondary-color: #c8c8c8;
+  --optional-color: #787878;
+  --border-color: #d9d9d9;
+  --white-color: #ffffff;
+  --black-color: #000000;
+}
