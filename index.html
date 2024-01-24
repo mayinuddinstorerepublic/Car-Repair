@@ -10,10 +10,7 @@
   <!-- Favicon Icon -->
   <link rel="icon" href="src/assets/images/favicon.ico" />
   <!-- Site Title -->
-  <link rel="stylesheet" href="./output/tailwind.css" />
-  <!-- <style>
-    @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@700&family=Sarabun&display=swap');
-  </style> -->
+  <link rel="stylesheet" href="output/tailwind.css" />
   <!-- <style>
     .snap-x {
       scroll-snap-type: x mandatory;
@@ -25,6 +22,7 @@
       scroll-snap-align: start;
     }
   </style> -->
+
 </head>
 
 <body>
@@ -98,42 +96,122 @@
     </div>
   </nav>
 
-  <section>
-    <div class="flex flex-col items-center text-white font-bold uppercase">
-      <div class="w-full bg-white rounded overflow-x-hidden flex snap-x slider-parent" style="height: 70vh">
-        <div class="snap-start w-full h-full flex items-center justify-center flex-shrink-0 bg-blue-600" id="slide-1">
-          Slide 1
-        </div>
-        <div class="snap-start w-full h-full flex items-center justify-center flex-shrink-0 bg-green-600" id="slide-2">
-          Slide 2
-        </div>
-        <div class="snap-start w-full h-full flex items-center justify-center flex-shrink-0 bg-red-600" id="slide-3">
-          Slide 3
-        </div>
-        <div class="snap-start w-full h-full flex items-center justify-center flex-shrink-0 bg-green-600" id="slide-4">
-          Slide 4
-        </div>
-        <div class="snap-start w-full h-full flex items-center justify-center flex-shrink-0 bg-purple-600" id="slide-5">
-          Slide 5
-        </div>
-        <div class="snap-start w-full h-full flex items-center justify-center flex-shrink-0 bg-indigo-600" id="slide-6">
-          Slide 6
+  <section class="md:min-h-screen relative md:px-16 px-6 mx-auto container py-0 md:py-10">
+    <div class="mySlider hidden fade space-y-10 md:space-y-0 overflow-hidden">
+
+      <div class="md:col-span-2 flex">
+        <div class="w-full relative h-80 md:h-screen/2 rounded-lg shadow-2xl bg-black">
+          <img class="w-full h-full img overflow-hidden rounded-lg object-cover"
+            src="https://kaboompics.com/cache/4/6/f/3/4/46f34e7578c65a81469606046441b1afb2dde29a.jpeg" alt="">
         </div>
       </div>
 
-      <div class="flex justify-evenly mt-3 w-full space-x-1" id="sliderNav">
-        <a data-slide-key="1" class="active" href="#slide-1">1</a>
-        <a data-slide-key="2" class="" href="#slide-2">2</a>
-        <a data-slide-key="3" class="" href="#slide-3">3</a>
-        <a data-slide-key="4" class="" href="#slide-4">4</a>
-        <a data-slide-key="5" class="" href="#slide-5">5</a>
-        <a data-slide-key="6" class="" href="#slide-6">6</a>
+      <div class="flex flex-col md:justify-center justify-between  ">
+        <h2 class="text-black text-base md:text-xl lg:text-6xl zen-dots font-bold mb-4 capitalize">accord</h2>
+        <div class="text-sm md:text-lg text-gray-900 my-3">Take care of yourself and others </div>
+        <a href="https://github.com/mazdevelop?tab=repositories"
+          class="py-2 md:py-3 px-2  flex flex-wrap rounded-lg space-x-3 items-center transition-colors  duration-700 ease-out hover:bg-gray-900 text-center bg-gray-600 text-white text-sm mx-auto">
+          <p class="text-sm md:text-base px-5 w-full">Continuation</p>
+        </a>
+      </div>
+    </div>
+    <div class="mySlider hidden fade space-y-10 md:space-y-0 overflow-hidden">
+
+      <div class="md:col-span-2 flex">
+        <div class="w-full relative h-80 md:h-screen/2 rounded-lg shadow-2xl bg-black">
+          <img class="w-full h-full img overflow-hidden rounded-lg object-cover"
+            src="https://kaboompics.com/cache/a/5/6/0/9/a56096ad2e3a8d8667e6a1477b6a24f5e96a391b.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="flex flex-col md:justify-center justify-between ">
+        <h2 class="text-black text-base md:text-4xl zen-dots lg:text-6xl font-bold mb-4 capitalize">covid 19</h2>
+        <div class="text-sm md:text-lg text-gray-900 my-3">Take care of yourself and others </div>
+        <a href="https://github.com/mazdevelop?tab=repositories"
+          class="py-2 md:py-3 px-2  flex flex-wrap rounded-lg space-x-3 items-center transition-colors  duration-700 ease-out hover:bg-gray-900 text-center bg-gray-600 text-white text-sm mx-auto">
+          <p class="text-sm md:text-base px-5 w-full">Continuation</p>
+        </a>
+      </div>
+    </div>
+    <div class="mySlider hidden fade space-y-10 md:space-y-0 overflow-hidden">
+
+      <div class="md:col-span-2 flex">
+        <div class="w-full relative h-80 md:h-screen rounded-lg shadow-2xl bg-black">
+          <img class="w-full h-full img overflow-hidden rounded-lg object-cover"
+            src="src/assets/images/video thumbnail.png" alt="">
+        </div>
+      </div>
+
+      <div class="flex flex-col md:justify-center justify-between ">
+        <h2 class="text-black text-base md:text-4xl lg:text-6xl font-bold mb-4 capitalize">mask</h2>
+        <div class="text-sm md:text-lg text-gray-900 my-3">Take care of yourself and others </div>
+        <a href="https://github.com/mazdevelop?tab=repositories"
+          class="py-2 md:py-3 px-2  flex flex-wrap rounded-lg space-x-3 items-center transition-colors duration-700 ease-out hover:bg-gray-900 text-center bg-gray-600 text-white text-sm mx-auto">
+          <p class="text-sm md:text-base px-5 w-full ">Continuation</p>
+        </a>
+      </div>
+    </div>
+    <div class="mySlider hidden fade space-y-10 md:space-y-0 overflow-hidden">
+
+      <div class="md:col-span-2 flex">
+        <div class="w-full relative h-80 md:h-screen/2 rounded-lg shadow-2xl bg-black">
+          <img class="w-full h-full img overflow-hidden rounded-lg object-cover"
+            src="https://kaboompics.com/cache/e/d/9/8/b/ed98b0e644ed73ee263abe8f0f241bf6db2c1b7b.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="flex flex-col md:justify-center justify-between ">
+        <h2 class="text-black text-base md:text-4xl lg:text-6xl font-bold mb-4 capitalize">Hand wash</h2>
+        <div class="text-sm md:text-lg text-gray-900 my-3">Take care of yourself and others </div>
+        <a href="https://github.com/mazdevelop?tab=repositories"
+          class="py-2 md:py-3 px-2  flex flex-wrap rounded-lg space-x-3 items-center transition-colors duration-700 ease-out hover:bg-gray-900 text-center bg-gray-600 text-white text-sm mx-auto">
+          <p class="text-sm md:text-base px-5 w-full">Continuation</p>
+        </a>
       </div>
     </div>
 
-    <a class="slider-button next border p-2 block bg-green-300" href="#">Next</a>
-    <a class="slider-button back border p-2 block bg-blue-300" href="#">Back</a>
+    <div class="absolute top-24">
+      <div class="grid grid-rows-4 gap-4 p-2 place-items-center">
+        <div class="index w-2 py-3 text-xs flex items-center border justify-center  border-gray-500"
+          onclick="currentSlide(1)"></div>
+        <div class="index w-2 py-3 text-xs flex items-center border justify-center  border-gray-500"
+          onclick="currentSlide(2)"></div>
+        <div class="index w-2 py-3 text-xs flex items-center border justify-center  border-gray-500"
+          onclick="currentSlide(3)"></div>
+        <div class="index w-2 py-3 text-xs flex items-center border justify-center  border-gray-500"
+          onclick="currentSlide(4)"></div>
+      </div>
+    </div>
+
+    <div
+      class="absolute navigation top-72 md:relative h-10 px-6 py-8 rounded-lg w-4/5 md:w-2/5 left-0 md:left-20 md:top-2/4 bg-white opacity-75 flex justify-center flex-col">
+      <nav class="flex justify-between">
+        <a onclick="plusSlides(-1)" class="main-nav prev transition duration-500 ease-in-out" data-nav="previous">
+          <span class="lnr lnr-arrow-left text-3xl">asdasd</span>
+        </a>
+        <a onclick="plusSlides(1)" class="bg-gray-700 main-nav next transition duration-500 ease-in-out"
+          data-nav="next">
+          <span class="lnr lnr-arrow-right text-3xl">asdasd</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="flex h-52 md:h-64  justify-center flex-wrap content-center">
+      <span class="scroll-btn">
+        <a href="#">
+          <span class="mouse">
+            <span>
+            </span>
+          </span>
+        </a>
+      </span>
+    </div>
   </section>
+
+
+
+
+  <h1 class="text-8xl text-red">Hello World</h1>
 
 
   <footer class="bg-black text-white">
@@ -158,7 +236,7 @@
             </svg>
             <span class="text-xl font-bold">Cras</span>
           </div>
-          <p class="text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+          <p class="text-md">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
             been the industry's stan. Lorem Ipsum is.</p>
           <div class="flex items-center space-x-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="61" viewBox="0 0 60 61" fill="none">
@@ -168,7 +246,7 @@
                 <circle cx="30" cy="30.502" r="20" fill="#FF3D24" />
               </g>
             </svg>
-            <span class="text-xl">(406) 555-0120</span>
+            <span class="fontStyles-5xl">(406) 555-0120</span>
           </div>
         </div>
         <div class="space-y-4">
@@ -231,16 +309,14 @@
                 stroke-linecap="round" stroke-linejoin="round" class="text-lg">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
               </svg></a><a class="hover:text-gray-300" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round" class="text-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-lg">
                 <path
                   d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
                 </path>
               </svg></a><a class="hover:text-gray-300" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round" class="text-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-lg">
                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
@@ -250,7 +326,7 @@
     </div>
   </footer>
 
-  <script src="./src/assets/js/main.js"></script>
+  <script src="src/assets/js/main.js"></script>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -263,32 +339,99 @@
   </script>
 
   <script>
-    let buttons = document.querySelectorAll(".slider-button");
+    const mySlider = document.querySelectorAll(".mySlider"),
+      index = document.querySelectorAll(".index");
     let counter = 1;
-    let numberOfSlides = document.querySelector(".slider-parent").childElementCount;
+    var timer = setInterval(autoslide, 10000);
 
-    buttons.forEach((button) => {
-      button.addEventListener("click", () => {
-        if (button.classList.contains("next")) {
-          counter++;
-          if (counter > numberOfSlides) {
-            counter = 1;
-          }
-          button.href = `#slide-${counter}`;
-          let slide = document.querySelector(`[data-slide-key="${counter}"]`)
-          // slide.style.backgroundColor = "red"
-          // slide.previousSibling.style.backgroundColor = "gray"
-          slide.classList.toggle("bg-green-600")
+    slideFun(counter);
 
-        } else if (button.classList.contains("back")) {
-          counter--
-          if (counter < 1) {
-            counter = numberOfSlides
-          }
-          button.href = `#slide-${counter}`
-        }
-      });
+    function autoslide() {
+      counter += 1;
+      slideFun(counter);
+    }
+    function resetTimer() {
+      if (typeof timer !== "undefined") {
+        clearInterval(timer);
+      }
+      timer = setInterval(autoslide, 10000);
+    }
+
+    function plusSlides(n) {
+      counter += n;
+      slideFun(counter);
+      resetTimer();
+    }
+    function currentSlide(n) {
+      counter = n;
+      slideFun(counter);
+      resetTimer();
+    }
+    function slideFun(n) {
+      let i;
+      for (i = 0; i < mySlider.length; i++) {
+        mySlider[i].style.display = "none";
+        mySlider[i].classList.add("hidden");
+      }
+      for (i = 0; i < index.length; i++) {
+        index[i].classList.remove("action");
+      }
+      if (n > mySlider.length) {
+        counter = 1;
+      }
+      if (n < 1) {
+        counter = mySlider.length;
+      }
+      if (mySlider[counter - 1].style.removeProperty) {
+        mySlider[counter - 1].style.removeProperty("display");
+      } else {
+        mySlider[counter - 1].style.removeAttribute("display");
+      }
+      mySlider[counter - 1].classList.remove("hidden");
+      mySlider[counter - 1].classList.add("md:grid", "md:grid-cols-3", "md:gap-4");
+      index[counter - 1].classList.add("action");
+    }
+  </script>
+
+
+
+  <script>
+    function gallery() {
+      this.index = 0;
+      this.load = function () {
+        this.rootEl = document.querySelector(".gallery");
+        this.platform = this.rootEl.querySelector(".platform");
+        this.frames = this.platform.querySelectorAll(".each-frame");
+        this.contentArea = this.rootEl.querySelector(".content-area");
+        this.width = parseInt(this.rootEl.style.width);
+        this.limit = { start: 0, end: this.frames.length - 1 };
+        this.frames.forEach(each => { each.style.width = this.width + "px"; });
+        this.goto(this.index);
+      }
+      this.set_title = function () { this.rootEl.querySelector(".heading").innerText = this.frames[this.index].getAttribute("title"); }
+      this.next = function () { this.platform.style.right = this.width * ++this.index + "px"; this.set_title(); }
+      this.prev = function () { this.platform.style.right = this.width * --this.index + "px"; this.set_title(); }
+      this.goto = function (index) { this.platform.style.right = this.width * index + "px"; this.index = index; this.set_title(); }
+      this.load();
+    }
+    var G = new gallery();
+    G.rootEl.addEventListener("click", function (t) {
+      var val = t.target.getAttribute("action");
+      if (val == "next" && G.index != G.limit.end) { G.next(); }
+      if (val == "prev" && G.index != G.limit.start) { G.prev(); }
+      if (val == "goto") {
+        let rv = t.target.getAttribute("goto");
+        rv = rv == "end" ? G.limit.end : rv;
+        G.goto(parseInt(rv));
+      }
     });
+    document.addEventListener("keyup", function (t) {
+      var val = t.keyCode;
+      if (val == 39 && G.index != G.limit.end) { G.next(); }
+      if (val == 37 && G.index != G.limit.start) { G.prev(); }
+    });
+
+    // run G.load() if new data loaded with ajax
 
   </script>
 

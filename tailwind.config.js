@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const fontStyles = {
   // sample: [text-color, font-size, font-weight, line-height, letter-spacing, font-family]
-  sm: [
+  base: [
     "var(--text-color)",
     "var(--p-font-size)",
     "var(--p-font-weight)",
@@ -9,7 +9,7 @@ const fontStyles = {
     "var(--p-font-spacing)",
     "var(--body-font-family)",
   ],
-  md: [
+  lg: [
     "var(--text-color)",
     "var(--p-large-font-size)",
     "var(--p-large-font-weight)",
