@@ -7,6 +7,13 @@
   --body-font-family: "Sarabun", sans-serif;
   --heading-font-family: "Oxanium", sans-serif;
 
+  /* colors */
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --primary-color: #FF3D24;
+  --dark-color: #101010;
+  --text-color: #D30D30;
+
   /* font size */
   --h1-font-size: 3.875rem;
   --h2-font-size: 3rem;
@@ -44,6 +51,6 @@
   --h4-letter-spacing: normal;
   --h5-letter-spacing: normal;
   --h6-letter-spacing: normal;
-  --p-font-height: normal;
-  --p-large-font-height: normal;
+  --p-font-spacing: normal;
+  --p-large-font-spacing: normal;
 }
