@@ -25,8 +25,8 @@
 
 </head>
 
-<body>
-  <nav class="bg-black">
+<body class="scroll-smooth">
+  <nav class="bg-black sticky top-0 z-10">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-24 items-center justify-between">
         <div class="ml-auto absolute inset-y-0 right-0 flex items-center sm:hidden mt-2">
@@ -96,103 +96,81 @@
     </div>
   </nav>
 
-  <section class="md:min-h-screen relative ">
+  <section class="md:min-h-screen relative">
     <div class="mySlider hidden fade space-y-10 md:space-y-0 overflow-hidden">
       <div class="md:col-span-3 flex">
         <div class="w-full relative h-full shadow-2xl bg-black">
-          <img class="w-full h-full img overflow-hidden  object-cover" src="src/assets/images/video thumbnail.png"
-            alt="...">
+          <img class="w-full h-full img overflow-hidden object-cover"
+            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg" alt="...">
         </div>
       </div>
     </div>
-
     <div class="mySlider hidden fade space-y-10 md:space-y-0 overflow-hidden">
       <div class="md:col-span-3 flex">
         <div class="w-full relative h-full bg-black">
-          <img class="w-full h-full img overflow-hidden  object-cover" src="src/assets/images/slider1.png" alt="...">
+          <img class="w-full h-full img overflow-hidden object-cover"
+            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(20).jpg" alt="...">
         </div>
       </div>
     </div>
-
     <div class="mySlider hidden fade space-y-10 md:space-y-0 overflow-hidden">
       <div class="md:col-span-3 flex">
         <div class="w-full relative h-full bg-black">
-          <img class="w-full h-full img overflow-hidden  object-cover" src="src/assets/images/video thumbnail.png"
-            alt="...">
+          <img class="w-full h-full img overflow-hidden object-cover"
+            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(25).jpg" alt="...">
         </div>
       </div>
     </div>
-
+    <div class="absolute top-1/3 right-0">
+      <div class="grid grid-rows-4 gap-4 p-2 place-items-center">
+        <div class="index w-2 py-3 text-xs flex items-center border justify-center border-gray-500"
+          onclick="currentSlide(1)"></div>
+        <div class="index w-2 py-3 text-xs flex items-center border justify-center border-gray-500"
+          onclick="currentSlide(2)"></div>
+        <div class="index w-2 py-3 text-xs flex items-center border justify-center border-gray-500"
+          onclick="currentSlide(3)"></div>
+        <div class="index w-2 py-3 text-xs flex items-center border justify-center border-gray-500"
+          onclick="currentSlide(4)"></div>
+      </div>
+    </div>
     <div class="absolute top-1/3">
       <div class="grid grid-rows-4 gap-4 p-2 place-items-center">
-        <div class="index w-2 py-3 text-xs flex items-center border justify-center  border-gray-500"
+        <div class="index w-2 py-3 text-xs flex items-center border justify-center border-gray-500"
           onclick="currentSlide(1)"></div>
-        <div class="index w-2 py-3 text-xs flex items-center border justify-center  border-gray-500"
+        <div class="index w-2 py-3 text-xs flex items-center border justify-center border-gray-500"
           onclick="currentSlide(2)"></div>
-        <div class="index w-2 py-3 text-xs flex items-center border justify-center  border-gray-500"
+        <div class="index w-2 py-3 text-xs flex items-center border justify-center border-gray-500"
           onclick="currentSlide(3)"></div>
-        <div class="index w-2 py-3 text-xs flex items-center border justify-center  border-gray-500"
+        <div class="index w-2 py-3 text-xs flex items-center border justify-center border-gray-500"
           onclick="currentSlide(4)"></div>
       </div>
     </div>
 
     <div
-      class="absolute navigation top-72 md:relative h-10 px-6 py-8  w-4/5 md:w-2/5 left-0 md:left-20 md:top-2/4 bg-white opacity-75 flex justify-center flex-col">
+      class="absolute navigation bottom-0 md:relative h-10 px-6 py-8 w-4/5 md:w-2/5 left-0 md:left-20 md:top-2/4 bg-white opacity-75 flex justify-center flex-col">
       <nav class="flex justify-between">
-        <a onclick="plusSlides(-1)" class="main-nav prev bg-gray-700 transition duration-500 ease-in-out" data-nav="previous">
-          <span class="lnr lnr-arrow-left text-3xl cursor-pointer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="170" height="75" viewBox="0 0 170 75" fill="none">
-              
-              <path d="M21.7929 36.7929C21.4024 37.1834 21.4024 37.8166 21.7929 38.2071L28.1569 44.5711C28.5474 44.9616 29.1805 44.9616 29.5711 44.5711C29.9616 44.1805 29.9616 43.5474 29.5711 43.1569L23.9142 37.5L29.5711 31.8431C29.9616 31.4526 29.9616 30.8195 29.5711 30.4289C29.1805 30.0384 28.5474 30.0384 28.1569 30.4289L21.7929 36.7929ZM22.5 38.5H52.5V36.5H22.5V38.5Z" fill="white"/>
-              <defs>
-                <filter id="filter0_b_22_83" x="-105" y="-200" width="475" height="475" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="100"/>
-                  <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_22_83"/>
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_22_83" result="shape"/>
-                </filter>
-                <filter id="filter1_b_22_83" x="-200" y="-200" width="475" height="475" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="100"/>
-                  <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_22_83"/>
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_22_83" result="shape"/>
-                </filter>
-              </defs>
-            </svg>
-          </span>
+        <a onclick="plusSlides(-1)"
+          class="main-nav prev flex justify-items-center h-20 cursor-pointer w-20 rounded-full bg-gray-700 transition duration-500 ease-in-out"
+          data-nav="previous">
+          <svg width="32" height="15" viewBox="0 0 32 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.792893 6.79289C0.402369 7.18342 0.402369 7.81658 0.792893 8.20711L7.15685 14.5711C7.54738 14.9616 8.18054 14.9616 8.57107 14.5711C8.96159 14.1805 8.96159 13.5474 8.57107 13.1569L2.91421 7.5L8.57107 1.84315C8.96159 1.45262 8.96159 0.819456 8.57107 0.428932C8.18054 0.0384079 7.54738 0.0384079 7.15685 0.428932L0.792893 6.79289ZM1.5 8.5H31.5V6.5H1.5V8.5Z"
+              fill="white" />
+          </svg>
         </a>
-        <a onclick="plusSlides(1)" class="bg-gray-700 main-nav next transition duration-500 ease-in-out"
+        <a onclick="plusSlides(1)"
+          class="bg-gray-700 h-20 cursor-pointer w-20 rounded-full main-nav next transition duration-500 ease-in-out"
           data-nav="next">
           <span class="lnr lnr-arrow-right text-3xl rounded-full cursor-pointer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="170" height="75" viewBox="0 0 170 75" fill="none">
-              <g opacity="0.5" filter="url(#filter0_b_22_83)">
-                <rect x="95" width="75" height="75" rx="37.5" fill="white" fill-opacity="0.15" />
-                <rect x="95.5" y="0.5" width="74" height="74" rx="37" stroke="white" stroke-opacity="0.1" />
-              </g>
+            <svg width="32" height="15" viewBox="0 0 32 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M148.207 38.2071C148.598 37.8166 148.598 37.1834 148.207 36.7929L141.843 30.4289C141.453 30.0384 140.819 30.0384 140.429 30.4289C140.038 30.8195 140.038 31.4526 140.429 31.8431L146.086 37.5L140.429 43.1569C140.038 43.5474 140.038 44.1805 140.429 44.5711C140.819 44.9616 141.453 44.9616 141.843 44.5711L148.207 38.2071ZM117.5 38.5H147.5V36.5H117.5V38.5Z"
+                d="M31.2071 8.20711C31.5976 7.81658 31.5976 7.18342 31.2071 6.79289L24.8431 0.428932C24.4526 0.0384079 23.8195 0.0384079 23.4289 0.428932C23.0384 0.819456 23.0384 1.45262 23.4289 1.84315L29.0858 7.5L23.4289 13.1569C23.0384 13.5474 23.0384 14.1805 23.4289 14.5711C23.8195 14.9616 24.4526 14.9616 24.8431 14.5711L31.2071 8.20711ZM0.5 8.5H30.5V6.5H0.5V8.5Z"
                 fill="white" />
-              <g opacity="0.5" filter="url(#filter1_b_22_83)">
-                <rect width="75" height="75" rx="37.5" fill="white" fill-opacity="0.15" />
-                <rect x="0.5" y="0.5" width="74" height="74" rx="37" stroke="white" stroke-opacity="0.1" />
-              </g>
-              
             </svg>
           </span>
         </a>
       </nav>
     </div>
-
-    <!-- <div class="flex h-52 md:h-64  justify-center flex-wrap content-center">
-      <span class="scroll-btn">
-        <a href="#">
-          <span class="mouse">
-            <span>
-            </span>
-          </span>
-        </a>
-      </span>
-    </div> -->
   </section>
 
 
