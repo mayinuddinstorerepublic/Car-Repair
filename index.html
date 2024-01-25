@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cras - Car Repair & Auto Services Tailwind Template</title>
-  <meta name="author" content="Theme March" />
-  <!-- Favicon Icon -->
-  <link rel="icon" href="src/assets/images/favicon.ico" />
-  <!-- Site Title -->
-  <link rel="stylesheet" href="output/tailwind.css" />
-  <!-- <style>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Cras - Car Repair & Auto Services Tailwind Template</title>
+   <meta name="author" content="Theme March" />
+   <!-- Favicon Icon -->
+   <link rel="icon" href="src/assets/images/favicon.ico" />
+   <!-- Site Title -->
+   <link rel="stylesheet" href="output/tailwind.css" />
+   <!-- <style>
     .snap-x {
       scroll-snap-type: x mandatory;
       scroll-behavior: smooth;
@@ -26,366 +26,463 @@
 </head>
 
 <body class="scroll-smooth">
-  <!-- Navbar Section Start -->
-  <nav class="bg-black sticky top-0 z-10">
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-      <div class="relative flex h-24 items-center justify-between">
-        <div class="ml-auto absolute inset-y-0 right-0 flex items-center sm:hidden mt-2">
-          <!-- Mobile menu button-->
-          <button type="button"
-            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-            aria-controls="mobile-menu" aria-expanded="false">
-            <span class="absolute -inset-0.5"></span>
-            <span class="sr-only">Open main menu</span>
+   <!-- Navbar Section Start -->
+   <nav class="backdrop-blur-sm bg-black sticky top-0 z-10">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+         <div class="relative flex md:h-24 h-16 items-center justify-between">
+            <div class="ml-auto absolute inset-y-0 right-0 flex items-center sm:hidden mt-2">
+               <!-- Mobile menu button-->
+               <button type="button"
+                  class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                  aria-controls="mobile-menu" aria-expanded="false">
+                  <span class="absolute -inset-0.5"></span>
+                  <span class="sr-only">Open main menu</span>
 
-            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                     aria-hidden="true">
+                     <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+
+                  <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                     aria-hidden="true">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+               </button>
+            </div>
+
+
+            <div class="sm:items-stretch sm:justify-start">
+               <div class="flex flex-shrink-0 items-center">
+                  <img class="h-8 w-auto" src="src/assets//images/logo.png" alt="...">
+               </div>
+            </div>
+            <div class="hidden justify-center sm:ml-6 sm:block">
+               <div class="flex space-x-4">
+                  <a href=""
+                     class="text-gray-300 hover:bg-gray-700 hover:text-white uppercase rounded-md px-3 text-xs font-normal">Home</a>
+                  <a href=""
+                     class="text-gray-300 hover:bg-gray-700 hover:text-white uppercase rounded-md px-3 text-xs font-normal">About</a>
+                  <a href=""
+                     class="text-gray-300 hover:bg-gray-700 hover:text-white uppercase rounded-md px-3 text-xs font-normal">Services</a>
+                  <a href=""
+                     class="text-gray-300 hover:bg-gray-700 hover:text-white uppercase rounded-md px-3 text-xs font-normal">Blogs</a>
+                  <a href=""
+                     class="text-gray-300 hover:bg-gray-700 hover:text-white uppercase rounded-md px-3 text-xs font-normal">Pages</a>
+                  <a href=""
+                     class="text-gray-300 hover:bg-gray-700 hover:text-white uppercase rounded-md px-3 text-xs font-normal">Contact</a>
+               </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+               <h1 class="text-white font-bold hidden sm:flex">1-800-915-6271</h1>
+            </div>
+         </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="sm:hidden" id="mobile-menu">
+         <div class="space-y-1 px-2 pb-3 pt-2">
+            <a href="#"
+               class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base uppercase font-medium">Home</a>
+            <a href="#"
+               class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base uppercase font-medium">About</a>
+            <a href="#"
+               class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base uppercase font-medium">Services</a>
+            <a href="#"
+               class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base uppercase font-medium">Blogs</a>
+            <a href="#"
+               class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base uppercase font-medium">Pages</a>
+            <a href="#"
+               class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base uppercase font-medium">Contact</a>
+         </div>
+      </div>
+   </nav>
+   <!-- Navbar Section End -->
+
+   <!-- Banner Slider Start -->
+   <div class="md:min-h-screen relative -top-100">
+      <div class="mySlider hidden fade space-y-10 md:space-y-0 overflow-hidden">
+         <div class="md:col-span-3 flex">
+            <div class="w-full relative h-full bg-black">
+               <img class="w-full h-full img overflow-hidden object-cover" src="src/assets/images/slider1.png"
+                  alt="...">
+            </div>
+         </div>
+      </div>
+      <div class="mySlider hidden fade space-y-10 md:space-y-0 overflow-hidden">
+         <div class="md:col-span-3 flex">
+            <div class="w-full relative h-full">
+               <img class="w-full h-full img overflow-hidden " src="src/assets/images/rev-image.png" alt="...">
+            </div>
+         </div>
+      </div>
+      <div class="mySlider hidden fade space-y-10 md:space-y-0 overflow-hidden">
+         <div class="md:col-span-3 flex">
+            <div class="w-full relative h-full">
+               <img class="w-full h-full img overflow-hidden " src="src/assets/images/slider1.png" alt="...">
+            </div>
+         </div>
+      </div>
+      <div class="mySlider hidden fade space-y-10 md:space-y-0 overflow-hidden">
+         <div class="md:col-span-3 flex">
+            <div class="w-full relative h-full">
+               <img class="w-full h-full img overflow-hidden object-cover" src="src/assets/images/rev-image.png"
+                  alt="...">
+            </div>
+         </div>
+      </div>
+      <div class="absolute top-1/3 right-0">
+         <div class="grid grid-rows-4 gap-4 p-2 place-items-center">
+            <div class="index w-2 py-1 text-md text-white cursor-pointer" onclick="currentSlide(1)">1</div>
+            <div class="index w-2 py-1 text-md text-white cursor-pointer" onclick="currentSlide(2)">2</div>
+            <div class="index w-2 py-1 text-md text-white cursor-pointer" onclick="currentSlide(3)">3</div>
+            <div class="index w-2 py-1 text-md text-white cursor-pointer" onclick="currentSlide(4)">4</div>
+         </div>
+      </div>
+
+      <div class="absolute top-1/3">
+         <div class="grid grid-rows-4 gap-4 p-2 place-items-center">
+            <div class="index w-2 py-3 text-xs flex items-center border justify-center border-gray-500"
+               onclick="currentSlide(1)"></div>
+            <div class="index w-2 py-3 text-xs flex items-center border justify-center border-gray-500"
+               onclick="currentSlide(2)"></div>
+            <div class="index w-2 py-3 text-xs flex items-center border justify-center border-gray-500"
+               onclick="currentSlide(3)"></div>
+            <div class="index w-2 py-3 text-xs flex items-center border justify-center border-gray-500"
+               onclick="currentSlide(4)"></div>
+         </div>
+      </div>
+
+      <div class="absolute bottom-1/4 flex right-12 gap-8 ">
+         <div onclick="plusSlides(-1)"
+            class="main-nav prev h-16 w-16 cursor-pointer rounded-full bg-gray-700 hover:bg-gray-500 opacity-75 transition duration-500 ease-in-out flex items-center justify-center"
+            data-nav="previous">
+            <svg width="32" height="15" viewBox="0 0 32 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path
+                  d="M0.792893 6.79289C0.402369 7.18342 0.402369 7.81658 0.792893 8.20711L7.15685 14.5711C7.54738 14.9616 8.18054 14.9616 8.57107 14.5711C8.96159 14.1805 8.96159 13.5474 8.57107 13.1569L2.91421 7.5L8.57107 1.84315C8.96159 1.45262 8.96159 0.819456 8.57107 0.428932C8.18054 0.0384079 7.54738 0.0384079 7.15685 0.428932L0.792893 6.79289ZM1.5 8.5H31.5V6.5H1.5V8.5Z"
+                  fill="white" />
             </svg>
+         </div>
+         <div onclick="plusSlides(1)"
+            class="main-nav next h-16 w-16 cursor-pointer rounded-full bg-gray-700 hover:bg-gray-500 opacity-75 transition duration-500 ease-in-out flex items-center justify-center"
+            data-nav="next">
+            <span class="lnr lnr-arrow-right text-3xl rounded-full cursor-pointer">
+               <svg width="32" height="15" viewBox="0 0 32 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                     d="M31.2071 8.20711C31.5976 7.81658 31.5976 7.18342 31.2071 6.79289L24.8431 0.428932C24.4526 0.0384079 23.8195 0.0384079 23.4289 0.428932C23.0384 0.819456 23.0384 1.45262 23.4289 1.84315L29.0858 7.5L23.4289 13.1569C23.0384 13.5474 23.0384 14.1805 23.4289 14.5711C23.8195 14.9616 24.4526 14.9616 24.8431 14.5711L31.2071 8.20711ZM0.5 8.5H30.5V6.5H0.5V8.5Z"
+                     fill="white" />
+               </svg>
+            </span>
+         </div>
 
-            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-
-
-        <div class="sm:items-stretch sm:justify-start">
-          <div class="flex flex-shrink-0 items-center">
-            <img class="h-8 w-auto" src="src/assets//images/logo.png" alt="...">
-          </div>
-        </div>
-        <div class="hidden justify-center sm:ml-6 sm:block">
-          <div class="flex space-x-4">
-            <a href=""
-              class="text-gray-300 hover:bg-gray-700 hover:text-white uppercase rounded-md px-3 text-xs font-normal">Home</a>
-            <a href=""
-              class="text-gray-300 hover:bg-gray-700 hover:text-white uppercase rounded-md px-3 text-xs font-normal">About</a>
-            <a href=""
-              class="text-gray-300 hover:bg-gray-700 hover:text-white uppercase rounded-md px-3 text-xs font-normal">Services</a>
-            <a href=""
-              class="text-gray-300 hover:bg-gray-700 hover:text-white uppercase rounded-md px-3 text-xs font-normal">Blogs</a>
-            <a href=""
-              class="text-gray-300 hover:bg-gray-700 hover:text-white uppercase rounded-md px-3 text-xs font-normal">Pages</a>
-            <a href=""
-              class="text-gray-300 hover:bg-gray-700 hover:text-white uppercase rounded-md px-3 text-xs font-normal">Contact</a>
-          </div>
-        </div>
-        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-          <h1 class="text-white font-bold hidden sm:flex">1-800-915-6271</h1>
-        </div>
       </div>
-    </div>
-
-    <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden" id="mobile-menu">
-      <div class="space-y-1 px-2 pb-3 pt-2">
-        <a href="#"
-          class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base uppercase font-medium">Home</a>
-        <a href="#"
-          class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base uppercase font-medium">About</a>
-        <a href="#"
-          class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base uppercase font-medium">Services</a>
-        <a href="#"
-          class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base uppercase font-medium">Blogs</a>
-        <a href="#"
-          class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base uppercase font-medium">Pages</a>
-        <a href="#"
-          class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base uppercase font-medium">Contact</a>
+      <div class="absolute bottom-1/3 md:left-1/4 left-10 gap-8">
+         <h1 class="text-6xl text-white font-bold">Car Repair & Auto Services</h1>
+         <p class="text-sm text-white my-4">Our skilled team of certified technicians is here to provide top-notch car
+            repair and auto services to ensure your vehicle performs at its best. Our skilled team of certified
+            technicians.
+         </p>
+         <button class="text-white bg-red-600 py-6 px-12 border-none font-semibold text-xl">VIEW MORE</button>
       </div>
-    </div>
-  </nav>
-  <!-- Navbar Section End -->
+   </div>
+   <!-- Banner Slider End -->
 
-  <!-- Banner Slider Start -->
-  <div class="md:min-h-screen relative">
-    <div class="mySlider hidden fade space-y-10 md:space-y-0 overflow-hidden">
-      <div class="md:col-span-3 flex">
-        <div class="w-full relative h-full bg-black">
-          <img class="w-full h-full img overflow-hidden object-cover"
-            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(1).jpg" alt="...">
-        </div>
-      </div>
-    </div>
-    <div class="mySlider hidden fade space-y-10 md:space-y-0 overflow-hidden">
-      <div class="md:col-span-3 flex">
-        <div class="w-full relative h-full bg-black">
-          <img class="w-full h-full img overflow-hidden object-cover"
-            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(2).jpg" alt="...">
-        </div>
-      </div>
-    </div>
-    <div class="mySlider hidden fade space-y-10 md:space-y-0 overflow-hidden">
-      <div class="md:col-span-3 flex">
-        <div class="w-full relative h-full bg-black">
-          <img class="w-full h-full img overflow-hidden object-cover"
-            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(3).jpg" alt="...">
-        </div>
-      </div>
-    </div>
-
-    <div class="absolute top-1/3 right-0">
-      <div class="grid grid-rows-4 gap-4 p-2 place-items-center">
-        <div class="index w-2 py-1 text-md text-white cursor-pointer" onclick="currentSlide(1)">1</div>
-        <div class="index w-2 py-1 text-md text-white cursor-pointer" onclick="currentSlide(2)">2</div>
-        <div class="index w-2 py-1 text-md text-white cursor-pointer" onclick="currentSlide(3)">3</div>
-        <div class="index w-2 py-1 text-md text-white cursor-pointer" onclick="currentSlide(4)">4</div>
-      </div>
-    </div>
-
-
-    <div class="absolute top-1/3">
-      <div class="grid grid-rows-4 gap-4 p-2 place-items-center">
-        <div class="index w-2 py-3 text-xs flex items-center border justify-center border-gray-500"
-          onclick="currentSlide(1)"></div>
-        <div class="index w-2 py-3 text-xs flex items-center border justify-center border-gray-500"
-          onclick="currentSlide(2)"></div>
-        <div class="index w-2 py-3 text-xs flex items-center border justify-center border-gray-500"
-          onclick="currentSlide(3)"></div>
-        <div class="index w-2 py-3 text-xs flex items-center border justify-center border-gray-500"
-          onclick="currentSlide(4)"></div>
-      </div>
-    </div>
-
-    <div class="absolute bottom-1/4 flex right-12 gap-8">
-      <div onclick="plusSlides(-1)"
-        class="main-nav prev h-16 w-16 cursor-pointer rounded-full bg-gray-700 hover:bg-gray-500 opacity-75 transition duration-500 ease-in-out flex items-center justify-center"
-        data-nav="previous">
-        <svg width="32" height="15" viewBox="0 0 32 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M0.792893 6.79289C0.402369 7.18342 0.402369 7.81658 0.792893 8.20711L7.15685 14.5711C7.54738 14.9616 8.18054 14.9616 8.57107 14.5711C8.96159 14.1805 8.96159 13.5474 8.57107 13.1569L2.91421 7.5L8.57107 1.84315C8.96159 1.45262 8.96159 0.819456 8.57107 0.428932C8.18054 0.0384079 7.54738 0.0384079 7.15685 0.428932L0.792893 6.79289ZM1.5 8.5H31.5V6.5H1.5V8.5Z"
-            fill="white" />
-        </svg>
-      </div>
-      <div onclick="plusSlides(1)"
-        class="main-nav next h-16 w-16 cursor-pointer rounded-full bg-gray-700 hover:bg-gray-500 opacity-75 transition duration-500 ease-in-out flex items-center justify-center"
-        data-nav="next">
-        <span class="lnr lnr-arrow-right text-3xl rounded-full cursor-pointer">
-          <svg width="32" height="15" viewBox="0 0 32 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M31.2071 8.20711C31.5976 7.81658 31.5976 7.18342 31.2071 6.79289L24.8431 0.428932C24.4526 0.0384079 23.8195 0.0384079 23.4289 0.428932C23.0384 0.819456 23.0384 1.45262 23.4289 1.84315L29.0858 7.5L23.4289 13.1569C23.0384 13.5474 23.0384 14.1805 23.4289 14.5711C23.8195 14.9616 24.4526 14.9616 24.8431 14.5711L31.2071 8.20711ZM0.5 8.5H30.5V6.5H0.5V8.5Z"
-              fill="white" />
-          </svg>
-        </span>
-      </div>
-
-    </div>
-  </div>
-  <!-- Banner Slider End -->
-
-
-
-
-  <!-- Footer Section end -->
-  <footer class="bg-black text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="border-t border-gray-700 my-8 py-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+   <!-- Cart Section Start -->
+   <!-- <div class="bg-black text-white">
+    <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         <div class="space-y-4">
           <div class="flex items-center space-x-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="37" height="40" viewBox="0 0 37 40" fill="none">
-              <g clip-path="url(#clip0_365_2447)">
-                <path
-                  d="M35.9763 5.33527L17.9834 0.00244141L0.00588989 5.33527V6.35541C0.0705966 10.065 0.48215 13.7605 1.23517 17.3934C1.05664 16.4039 0.569524 12.4967 2.79345 7.38576L17.9834 2.88436L33.1862 7.39086C32.9592 10.6579 33.3112 15.4908 27.1418 18.4136C21.378 21.1476 18.9271 21.1297 18.9271 21.1297C18.0348 20.3801 16.9137 19.9568 15.7486 19.9297C14.5836 19.9027 13.444 20.2734 12.5179 20.9808C11.5918 21.6882 10.9343 22.6901 10.6539 23.8212C10.3735 24.9524 10.4869 26.1453 10.9754 27.2034C11.4639 28.2614 12.2984 29.1215 13.3412 29.6417C14.384 30.162 15.573 30.3113 16.7121 30.0653C17.8512 29.8192 18.8725 29.1923 19.6075 28.2879C20.3426 27.3836 20.7476 26.2558 20.7557 25.0904C32.2375 20.2167 36.8001 16.5059 35.9763 5.33527ZM18.5598 26.6946L17.5958 27.1792L17.0373 28.1024L15.9738 27.929L14.9791 28.3498L14.214 27.5847L13.1658 27.3297L13 26.2636L12.2961 25.4475L12.7883 24.4885L12.6965 23.4148L13.6606 22.9277L14.2191 22.0045L15.2826 22.1805L16.2772 21.7596L17.0424 22.5248L18.0931 22.7798L18.2563 23.8458L18.9628 24.662L18.468 25.6209L18.5598 26.6946Z"
-                  fill="#FF3D24" />
-                <path
-                  d="M33.2364 21.3389C32.1963 24.6928 30.7034 27.889 28.7988 30.839C26.0597 34.9706 22.6116 37.9801 18.5463 39.7653L17.9903 40.0076C17.9903 40.0076 12.3234 38.2861 7.18183 30.839C2.04029 23.3919 4.13924 16.9369 9.54348 13.5883C15.1058 10.1428 15.1543 10.232 15.1543 10.232C15.1605 9.32214 15.409 8.43034 15.8741 7.64828C16.3392 6.86623 17.0041 6.22213 17.8006 5.78221C18.5971 5.34228 19.4964 5.1224 20.406 5.14516C21.3156 5.16792 22.2028 5.43249 22.9763 5.9117L18.8319 8.43657L18.6814 11.0073L20.737 12.558L25.3456 11.0277C25.2081 11.9271 24.8339 12.7737 24.2613 13.4807C23.6887 14.1877 22.9384 14.7297 22.0872 15.0511C21.2361 15.3724 20.3148 15.4616 19.4178 15.3094C18.5208 15.1572 17.6804 14.7692 16.9829 14.1851C16.9829 14.1851 16.4575 14.1851 12.3922 16.3504C4.5269 20.5712 7.75057 32.0377 17.9826 36.9599C18.1561 36.9242 18.3321 36.8834 18.4927 36.8375C24.4529 35.3506 29.268 30.6554 33.2364 21.3389Z"
-                  fill="#FF3D24" />
-              </g>
-              <defs>
-                <clipPath id="clip0_365_2447">
-                  <rect width="36.0699" height="40" fill="white" transform="translate(0 0.00244141)" />
-                </clipPath>
-              </defs>
-            </svg>
-            <span class="text-xl font-bold">Cras</span>
+            <div class="text-3xl font-bold">01</div>
+            <div class="flex-1 h-0.5 bg-gray-600"></div>
           </div>
-          <p class="text-md">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-            been the industry's stan. Lorem Ipsum is.</p>
-          <div class="flex items-center space-x-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="61" viewBox="0 0 60 61" fill="none">
-              <g opacity="0.5">
-                <circle opacity="0.3" cx="30" cy="30.502" r="25" fill="#FF3D24" />
-                <circle opacity="0.3" cx="30" cy="30.502" r="30" fill="#FF3D24" />
-                <circle cx="30" cy="30.502" r="20" fill="#FF3D24" />
-              </g>
-            </svg>
-            <span class="fontStyles-5xl">(406) 555-0120</span>
-          </div>
-        </div>
-        <div class="space-y-4">
-          <h4 class="uppercase font-bold text-sm tracking-widest">Quick Links</h4>
-          <ul class="space-y-2">
-            <li><a class="text-sm hover:text-gray-300" href="#">About</a></li>
-            <li><a class="text-sm hover:text-gray-300" href="#">Services</a></li>
-            <li><a class="text-sm hover:text-gray-300" href="#">Pricing</a></li>
-            <li><a class="text-sm hover:text-gray-300" href="#">Team</a></li>
-            <li><a class="text-sm hover:text-gray-300" href="#">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="space-y-4">
-          <h4 class="uppercase font-bold text-sm tracking-widest">More Links</h4>
-          <ul class="space-y-2">
-            <li><a class="text-sm hover:text-gray-300" href="#">Appointment</a></li>
-            <li><a class="text-sm hover:text-gray-300" href="#">Blog / News</a></li>
-            <li><a class="text-sm hover:text-gray-300" href="#">FAQ Question</a></li>
-            <li><a class="text-sm hover:text-gray-300" href="#">Mechanic</a></li>
-          </ul>
-        </div>
-        <div class="space-y-4">
-          <h4 class="uppercase font-bold text-sm tracking-widest">Location &amp; Contact</h4>
-          <ul class="space-y-2">
-            <li class="flex items-center space-x-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          <div class="bg-[#1E1E1E] p-6 rounded-lg space-y-4">
+            <div class="flex justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" class="text-red-600">
-                <line x1="2" x2="5" y1="12" y2="12"></line>
-                <line x1="19" x2="22" y1="12" y2="12"></line>
-                <line x1="12" x2="12" y1="2" y2="5"></line>
-                <line x1="12" x2="12" y1="19" y2="22"></line>
-                <circle cx="12" cy="12" r="7"></circle>
-              </svg><span class="text-sm">90 1st St, Suite 170 Alexandria, NY, USA</span></li>
-            <li class="flex items-center space-x-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" class="text-red-600">
-                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-              </svg><span class="text-sm">example@gmail.com</span></li>
-            <li class="flex items-center space-x-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" class="text-red-600">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
-              </svg><span class="text-sm">Sun - Thu: Open 24/7</span></li>
-          </ul>
-        </div>
-      </div>
-      <div class="border-t border-gray-700 mt-8 pt-4">
-        <div class="flex flex-col md:flex-row justify-between items-center">
-          <p class="text-sm">Copyright 2024, All Right reserved</p>
-          <div class="flex space-x-4 mt-4 md:mt-0"><a class="hover:text-gray-300" href="#"><svg
-                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-lg">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                <rect width="4" height="12" x="2" y="9"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-              </svg></a><a class="hover:text-gray-300" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round" class="text-lg">
-                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-              </svg></a><a class="hover:text-gray-300" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-lg">
+                stroke-linejoin="round" class="text-red-600 h-12 w-12">
                 <path
-                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                  d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z">
                 </path>
-              </svg></a><a class="hover:text-gray-300" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-lg">
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
-              </svg></a></div>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg></div>
+            <h3 class="text-2xl font-semibold text-center">PERFOMANCE CHECK</h3>
+            <p class="text-sm text-center">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's stan.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="flex items-center space-x-2">
+            <div class="text-3xl font-bold">02</div>
+            <div class="flex-1 h-0.5 bg-gray-600"></div>
+          </div>
+          <div class="bg-[#1E1E1E] p-6 rounded-lg space-y-4">
+            <div class="flex justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="text-red-600 h-12 w-12">
+                <path
+                  d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z">
+                </path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg></div>
+            <h3 class="text-2xl font-semibold text-center">AUTO REPAIR</h3>
+            <p class="text-sm text-center">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's stan.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="flex items-center space-x-2">
+            <div class="text-3xl font-bold">03</div>
+            <div class="flex-1 h-0.5 bg-gray-600"></div>
+          </div>
+          <div class="bg-[#1E1E1E] p-6 rounded-lg space-y-4">
+            <div class="flex justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="text-red-600 h-12 w-12">
+                <path d="M5 18H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h10c.6 0 1 .4 1 1v11"></path>
+                <path d="M14 9h4l4 4v4c0 .6-.4 1-1 1h-2"></path>
+                <circle cx="7" cy="18" r="2"></circle>
+                <path d="M15 18H9"></path>
+                <circle cx="17" cy="18" r="2"></circle>
+              </svg></div>
+            <h3 class="text-2xl font-semibold text-center">FLEET SERVICES</h3>
+            <p class="text-sm text-center">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's stan.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </footer>
-  <!-- Footer Section end -->
+  </div> -->
+   <!-- Cart Section End -->
 
-  <script src="src/assets/js/main.js"></script>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const mobileMenuButton = document.querySelector('[aria-controls="mobile-menu"]');
-      const mobileMenu = document.getElementById("mobile-menu");
-      mobileMenuButton.addEventListener("click", function () {
-        mobileMenu.classList.toggle("hidden");
+
+
+   <!-- Footer Top Section start -->
+   <div class="bg-black">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row items-center justify-around">
+         <div class="flex flex-col items-center lg:items-start mb-6 lg:mb-0">
+            <h2 class="text-white md:text-2xl text-md font-bold uppercase tracking-wide mb-1">Sign up for our newsletter to get weekly updates<br> on exclusive offers and discounts!</h2>
+         </div>
+         <form class="flex w-full lg:w-auto">
+            <input placeholder="Enter your email..."
+               class="flex-1 px-4 py-2 text-black placeholder-gray-400 border border-red-600 rounded-l-md focus:ring-red-500 focus:border-red-500"
+               type="email">
+            <button
+               class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 py-2 bg-red-600 text-white rounded-r-md px-4">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="text-white">
+                  <path d="m22 2-7 20-4-9-9-4Z"></path>
+                  <path d="M22 2 11 13"></path>
+               </svg>
+            </button>
+         </form>
+      </div>
+   </div>
+   <!-- Footer Top Section end -->
+
+
+
+   <!-- Footer Section end -->
+
+   <footer class="bg-black text-white">
+      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+            <div class="lg:col-span-3">
+               <h2 class="text-2xl font-bold text-red-600">Cras</h2>
+               <p class="mt-2 text-sm lg:pr-48">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's stan. Lorem Ipsum is.
+               </p>
+               <div class="mt-4 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="61" viewBox="0 0 60 61" fill="none">
+                     <g opacity="0.5">
+                        <circle opacity="0.3" cx="30" cy="30.502" r="25" fill="#FF3D24" />
+                        <circle opacity="0.3" cx="30" cy="30.502" r="30" fill="#FF3D24" />
+                        <circle cx="30" cy="30.502" r="20" fill="#FF3D24" />
+                     </g>
+                  </svg>
+                  <span class="ml-2 text-5xl font-bold">(406) 555-0120</span>
+               </div>
+            </div>
+            <div>
+               <h3 class="text-lg font-semibold uppercase">Quick Link</h3>
+               <ul class="mt-4 space-y-2">
+                  <li><a class="hover:text-red-600" href="#">About</a></li>
+                  <li><a class="hover:text-red-600" href="#">Services</a></li>
+                  <li><a class="hover:text-red-600" href="#">Pricing</a></li>
+                  <li><a class="hover:text-red-600" href="#">Team</a></li>
+                  <li><a class="hover:text-red-600" href="#">Contact Us</a></li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="text-lg font-semibold uppercase">Quick Link</h3>
+               <ul class="mt-4 space-y-2">
+                  <li><a class="hover:text-red-600" href="#">Appointment</a></li>
+                  <li><a class="hover:text-red-600" href="#">Blog / News</a></li>
+                  <li><a class="hover:text-red-600" href="#">FAQ Question</a></li>
+                  <li><a class="hover:text-red-600" href="#">Mechanic</a></li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="text-lg font-semibold uppercase">Location &amp; Contact</h3>
+               <ul class="mt-4 space-y-2">
+                  <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="text-red-600">
+                        <line x1="2" x2="5" y1="12" y2="12"></line>
+                        <line x1="19" x2="22" y1="12" y2="12"></line>
+                        <line x1="12" x2="12" y1="2" y2="5"></line>
+                        <line x1="12" x2="12" y1="19" y2="22"></line>
+                        <circle cx="12" cy="12" r="7"></circle>
+                     </svg><span class="ml-2">901 N Pitt Str, Suite 170 Alexandria, NY, USA</span></li>
+                  <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="text-red-600">
+                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                     </svg><span class="ml-2">example@email.com</span></li>
+                  <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="text-red-600">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                     </svg><span class="ml-2">Sun - Thu: Open 24/7</span></li>
+               </ul>
+            </div>
+         </div>
+         <div class="mt-8 border-t border-gray-700 pt-8">
+            <p class="text-sm text-gray-400">Copyright 2024, All Right reserved</p>
+            <div class="flex mt-4 space-x-6"><a class="text-gray-400 hover:text-red-600" href="#"><svg
+                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="h-6 w-6">
+                     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                     <rect width="4" height="12" x="2" y="9"></rect>
+                     <circle cx="4" cy="4" r="2"></circle>
+                  </svg></a><a class="text-gray-400 hover:text-red-600" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                     width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                  </svg></a><a class="text-gray-400 hover:text-red-600" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                     width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                     <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                     <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                  </svg></a><a class="text-gray-400 hover:text-red-600" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                     width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                     <polyline points="15 3 21 3 21 9"></polyline>
+                     <line x1="10" x2="21" y1="14" y2="3"></line>
+                  </svg></a></div>
+         </div>
+      </div>
+   </footer>
+   <!-- Footer Section end -->
+
+   <script src="src/assets/js/main.js"></script>
+
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+         const mobileMenuButton = document.querySelector('[aria-controls="mobile-menu"]');
+         const mobileMenu = document.getElementById("mobile-menu");
+         mobileMenuButton.addEventListener("click", function () {
+            mobileMenu.classList.toggle("hidden");
+         });
       });
-    });
-  </script>
+   </script>
 
-  <script>
-    const mySlider = document.querySelectorAll(".mySlider"),
-      index = document.querySelectorAll(".index");
-    let counter = 1;
-    var timer = setInterval(autoslide, 10000);
+   <script>
+      const mySlider = document.querySelectorAll(".mySlider"),
+         index = document.querySelectorAll(".index");
+      let counter = 1;
+      var timer = setInterval(autoslide, 10000);
 
-    slideFun(counter);
-
-    function autoslide() {
-      counter += 1;
       slideFun(counter);
-    }
-    function resetTimer() {
-      if (typeof timer !== "undefined") {
-        clearInterval(timer);
-      }
-      timer = setInterval(autoslide, 10000);
-    }
 
-    function plusSlides(n) {
-      counter += n;
-      slideFun(counter);
-      resetTimer();
-    }
-    function currentSlide(n) {
-      counter = n;
-      slideFun(counter);
-      resetTimer();
-    }
-    function slideFun(n) {
-      let i;
-      for (i = 0; i < mySlider.length; i++) {
-        mySlider[i].style.display = "none";
-        mySlider[i].classList.add("hidden");
+      function autoslide() {
+         counter += 1;
+         slideFun(counter);
       }
-      for (i = 0; i < index.length; i++) {
-        index[i].classList.remove("action");
+      function resetTimer() {
+         if (typeof timer !== "undefined") {
+            clearInterval(timer);
+         }
+         timer = setInterval(autoslide, 10000);
       }
-      if (n > mySlider.length) {
-        counter = 1;
-      }
-      if (n < 1) {
-        counter = mySlider.length;
-      }
-      if (mySlider[counter - 1].style.removeProperty) {
-        mySlider[counter - 1].style.removeProperty("display");
-      } else {
-        mySlider[counter - 1].style.removeAttribute("display");
-      }
-      mySlider[counter - 1].classList.remove("hidden");
-      mySlider[counter - 1].classList.add("md:grid", "md:grid-cols-3", "md:gap-4");
-      index[counter - 1].classList.add("action");
-    }
-  </script>
 
-  <script>
-    function slideFun(n) {
-      let i;
-      for (i = 0; i < mySlider.length; i++) {
-        mySlider[i].style.display = "none";
-        mySlider[i].classList.add("hidden");
+      function plusSlides(n) {
+         counter += n;
+         slideFun(counter);
+         resetTimer();
       }
-      for (i = 0; i < index.length; i++) {
-        index[i].classList.remove("action");
-        index[i].classList.remove("font-bold"); // Remove bold from all indices
+      function currentSlide(n) {
+         counter = n;
+         slideFun(counter);
+         resetTimer();
       }
-      if (n > mySlider.length) {
-        counter = 1;
+      function slideFun(n) {
+         let i;
+         for (i = 0; i < mySlider.length; i++) {
+            mySlider[i].style.display = "none";
+            mySlider[i].classList.add("hidden");
+         }
+         for (i = 0; i < index.length; i++) {
+            index[i].classList.remove("action");
+         }
+         if (n > mySlider.length) {
+            counter = 1;
+         }
+         if (n < 1) {
+            counter = mySlider.length;
+         }
+         if (mySlider[counter - 1].style.removeProperty) {
+            mySlider[counter - 1].style.removeProperty("display");
+         } else {
+            mySlider[counter - 1].style.removeAttribute("display");
+         }
+         mySlider[counter - 1].classList.remove("hidden");
+         mySlider[counter - 1].classList.add("md:grid", "md:grid-cols-3", "md:gap-4");
+         index[counter - 1].classList.add("action");
       }
-      if (n < 1) {
-        counter = mySlider.length;
+   </script>
+
+   <script>
+      function slideFun(n) {
+         let i;
+         for (i = 0; i < mySlider.length; i++) {
+            mySlider[i].style.display = "none";
+            mySlider[i].classList.add("hidden");
+         }
+         for (i = 0; i < index.length; i++) {
+            index[i].classList.remove("action");
+            index[i].classList.remove("font-bold"); // Remove bold from all indices
+         }
+         if (n > mySlider.length) {
+            counter = 1;
+         }
+         if (n < 1) {
+            counter = mySlider.length;
+         }
+         if (mySlider[counter - 1].style.removeProperty) {
+            mySlider[counter - 1].style.removeProperty("display");
+         } else {
+            mySlider[counter - 1].style.removeAttribute("display");
+         }
+         mySlider[counter - 1].classList.remove("hidden");
+         mySlider[counter - 1].classList.add("md:grid", "md:grid-cols-3", "md:gap-4");
+         index[counter - 1].classList.add("action");
+         index[counter - 1].classList.add("font-bold");
       }
-      if (mySlider[counter - 1].style.removeProperty) {
-        mySlider[counter - 1].style.removeProperty("display");
-      } else {
-        mySlider[counter - 1].style.removeAttribute("display");
-      }
-      mySlider[counter - 1].classList.remove("hidden");
-      mySlider[counter - 1].classList.add("md:grid", "md:grid-cols-3", "md:gap-4");
-      index[counter - 1].classList.add("action");
-      index[counter - 1].classList.add("font-bold");
-    }
-  </script>
+   </script>
 
 
 
