@@ -1,3 +1,13 @@
+@config "../tailwind.config.js";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #101010 !important;
+}
+
 :root {
   /* font family */
   --body-font-family: "Sarabun", sans-serif;
@@ -6,19 +16,19 @@
   /* colors */
   --white-color: #ffffff;
   --black-color: #000000;
-  --primary-color: #FF3D24;
+  --primary-color: #ff3d24;
   --dark-color: #101010;
-  --text-color: #D30D30;
+  --text-color: #d30d30;
 
   /* font size */
-  --h1-font-size: 3.875rem;
-  --h2-font-size: 3rem;
-  --h3-font-size: 2.25rem;
-  --h4-font-size: 1.75rem;
-  --h5-font-size: 1.5rem;
-  --h6-font-size: 1.25rem;
-  --p-font-size: 1rem;
-  --p-large-font-size: 1.125rem;
+  --h1-font-size: 3.875rem; /* 62px */
+  --h2-font-size: 3rem; /* 48px */
+  --h3-font-size: 2.25rem; /* 36px */
+  --h4-font-size: 1.75rem; /* 28px */
+  --h5-font-size: 1.5rem; /* 24px */
+  --h6-font-size: 1.25rem; /* 20px */
+  --p-font-size: 1rem; /* 16px */
+  --p-large-font-size: 1.125rem; /* 18px */
 
   /* font weights */
   --h1-font-weight: 700;
