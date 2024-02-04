@@ -13,8 +13,8 @@
    <link rel="stylesheet" href="output/tailwind.css" />
    <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
 
-   <!-- <style>
-    .snap-x {
+   <style>
+      /* .snap-x {
       scroll-snap-type: x mandatory;
       scroll-behavior: smooth;
       -webkit-overflow-scrolling: touch;
@@ -22,8 +22,15 @@
 
     .snap-start {
       scroll-snap-align: start;
-    }
-  </style> -->
+    } */
+      .text-animation-01 {
+         -webkit-text-stroke: 1px #ffffff;
+
+         &:hover {
+            -webkit-text-stroke: 1px #ff0000;
+         }
+      }
+   </style>
 
 </head>
 
@@ -58,17 +65,17 @@
             </div>
             <div class="hidden justify-center sm:ml-6 sm:block">
                <div class="flex space-x-4">
-                  <a href=""
+                  <a href="index.html"
                      class="text-gray-300 hover:bg-gray-700 hover:text-white uppercase rounded-md px-3 text-xs font-normal">Home</a>
-                  <a href=""
+                  <a href="about.html"
                      class="text-gray-300 hover:bg-gray-700 hover:text-white uppercase rounded-md px-3 text-xs font-normal">About</a>
-                  <a href=""
+                  <a href="services.html"
                      class="text-gray-300 hover:bg-gray-700 hover:text-white uppercase rounded-md px-3 text-xs font-normal">Services</a>
-                  <a href=""
+                  <a href="blog.html"
                      class="text-gray-300 hover:bg-gray-700 hover:text-white uppercase rounded-md px-3 text-xs font-normal">Blogs</a>
-                  <a href=""
+                  <a href="pages.html"
                      class="text-gray-300 hover:bg-gray-700 hover:text-white uppercase rounded-md px-3 text-xs font-normal">Pages</a>
-                  <a href=""
+                  <a href="contact.html"
                      class="text-gray-300 hover:bg-gray-700 hover:text-white uppercase rounded-md px-3 text-xs font-normal">Contact</a>
                </div>
             </div>
@@ -99,12 +106,11 @@
    <!-- Navbar Section End -->
 
 
-
    <!-- Banner Slider Start -->
    <div class="md:min-h-screen relative">
-      <div class="mySlider hidden fade space-y-10 md:space-y-0 overflow-hidden">
+      <div class="mySlider fade space-y-10 md:space-y-0 overflow-hidden">
          <div class="md:col-span-3 flex">
-            <div class="w-full relative h-full bg-black">
+            <div class="w-full relative">
                <img class="w-full h-full img overflow-hidden object-cover" src="src/assets/images/slider1.png"
                   alt="...">
             </div>
@@ -112,26 +118,26 @@
       </div>
       <div class="mySlider hidden fade space-y-10 md:space-y-0 overflow-hidden">
          <div class="md:col-span-3 flex">
-            <div class="w-full relative h-full">
-               <img class="w-full h-full img overflow-hidden " src="src/assets/images/rev-image.png" alt="...">
+            <div class="w-full relative">
+               <img class="w-full h-full img overflow-hidden" src="src/assets/images/rev-image.png" alt="...">
             </div>
          </div>
       </div>
-      <div class="mySlider hidden fade space-y-10 md:space-y-0 overflow-hidden">
+      <!-- <div class="mySlider hidden fade space-y-10 md:space-y-0 overflow-hidden">
          <div class="md:col-span-3 flex">
             <div class="w-full relative h-full">
                <img class="w-full h-full img overflow-hidden " src="src/assets/images/slider1.png" alt="...">
             </div>
          </div>
-      </div>
-      <div class="mySlider hidden fade space-y-10 md:space-y-0 overflow-hidden">
+      </div> -->
+      <!-- <div class="mySlider hidden fade space-y-10 md:space-y-0 overflow-hidden">
          <div class="md:col-span-3 flex">
             <div class="w-full relative h-full">
                <img class="w-full h-full img overflow-hidden object-cover" src="src/assets/images/rev-image.png"
                   alt="...">
             </div>
          </div>
-      </div>
+      </div> -->
       <div class="absolute top-1/3 right-0">
          <div class="grid grid-rows-4 gap-4 p-2 place-items-center">
             <div class="index w-2 py-1 text-md text-white cursor-pointer" onclick="currentSlide(1)">1</div>
@@ -175,7 +181,7 @@
          </div>
 
       </div>
-      <div class="absolute bottom-1/3 md:left-1/4 left-10 gap-8">
+      <div class="absolute sm:hidden lg:bottom-1/3 md:left-1/4 left-10 gap-8">
          <h1 class="text-6xl text-white font-bold">Car Repair & Auto Services</h1>
          <p class="text-sm text-white my-4">Our skilled team of certified technicians is here to provide top-notch car
             repair and auto services to ensure your vehicle performs at its best. Our skilled team of certified
@@ -262,10 +268,9 @@
 
 
    <section>
-      <div class="mx-auto container flex flex-wrap items-center justify-between px-8 py-12">
+      <div class="mx-auto container flex items-center justify-between px-8 py-12">
          <div class="w-full lg:w-1/2 space-y-6">
-            <div class="bg-url('src/assets/images/feature.png')"
-               class="bg-url('/src/assets/images/feature.png?height=184&amp;width=527') bg-no-repeat bg-cover bg-center">
+            <div class="bg-cover bg-left" style="background-image: url('/src/assets/images/feature.png');">
                <h2 class="text-5xl font-bold uppercase tracking-wider">Why Choose Us</h2>
                <p class="mt-4 text-md lg:pr-36">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -274,27 +279,18 @@
                </p>
             </div>
             <div class="space-y-4">
-               <div class="flex items-center">
-                  <h3 class="text-4xl font-semibold">Certified Technicians</h3>
-                  <!-- <svg class="mt-24" xmlns="http://www.w3.org/2000/svg" width="395" height="90" viewBox="0 0 395 90"
-                     fill="none">
-                     <path
-                        d="M157.215 3.49766V2.99766V3.49766ZM269.065 47.4706L269.542 47.3212L269.54 47.3138L269.538 47.3064L269.065 47.4706ZM185.726 60.4779L186.218 60.3901L185.726 60.4779ZM309.273 3.49766L309.256 3.99739L309.273 3.49766ZM394.536 3.49766L389.443 0.779458L389.636 6.54974L394.536 3.49766ZM0.765625 3.99766H3.77427V2.99766H0.765625V3.99766ZM9.79156 3.99766H15.8088V2.99766H9.79156V3.99766ZM21.8261 3.99766H27.8434V2.99766H21.8261V3.99766ZM33.8607 3.99766H39.878V2.99766H33.8607V3.99766ZM45.8953 3.99766H51.9126V2.99766H45.8953V3.99766ZM57.9299 3.99766H63.9471V2.99766H57.9299V3.99766ZM69.9644 3.99766H75.9817V2.99766H69.9644V3.99766ZM81.999 3.99766H88.0163V2.99766H81.999V3.99766ZM94.0336 3.99766H100.051V2.99766H94.0336V3.99766ZM106.068 3.99766H112.085V2.99766H106.068V3.99766ZM118.103 3.99766H124.12V2.99766H118.103V3.99766ZM130.137 3.99766H136.155V2.99766H130.137V3.99766ZM142.172 3.99766H148.189V2.99766H142.172V3.99766ZM154.206 3.99766H157.215V2.99766H154.206V3.99766ZM157.215 3.99766C158.194 3.99767 159.178 3.99531 160.167 3.99132L160.163 2.99132C159.175 2.99532 158.192 2.99767 157.215 2.99766V3.99766ZM166.082 3.95387C168.039 3.93886 170.01 3.92294 171.992 3.91133L171.986 2.91134C170.003 2.92297 168.031 2.93889 166.074 2.9539L166.082 3.95387ZM177.903 3.89453C179.866 3.8965 181.836 3.90761 183.807 3.93279L183.82 2.93287C181.844 2.90763 179.87 2.89651 177.904 2.89453L177.903 3.89453ZM189.71 4.05508C191.679 4.1132 193.646 4.19027 195.607 4.29121L195.658 3.29253C193.689 3.19117 191.715 3.11382 189.739 3.05552L189.71 4.05508ZM201.492 4.67257C203.46 4.82827 205.417 5.01346 207.36 5.23321L207.472 4.23955C205.517 4.01842 203.549 3.83219 201.571 3.67569L201.492 4.67257ZM213.201 6.01079C215.153 6.31236 217.085 6.65542 218.993 7.04539L219.193 6.06565C217.268 5.6722 215.32 5.32634 213.353 5.02252L213.201 6.01079ZM224.724 8.38391C226.632 8.88894 228.509 9.44938 230.35 10.0711L230.67 9.12365C228.806 8.49432 226.908 7.92754 224.98 7.41721L224.724 8.38391ZM235.84 12.1587C237.648 12.9291 239.413 13.7699 241.13 14.6875L241.602 13.8055C239.857 12.8734 238.065 12.02 236.232 11.2388L235.84 12.1587ZM246.161 17.6932C247.78 18.773 249.347 19.9361 250.857 21.189L251.495 20.4196C249.958 19.1436 248.363 17.9597 246.715 16.8612L246.161 17.6932ZM255.152 25.1658C256.489 26.5472 257.77 28.0178 258.988 29.5833L259.777 28.9692C258.537 27.3751 257.233 25.8773 255.87 24.4701L255.152 25.1658ZM262.336 34.3852C263.347 36.0063 264.302 37.7136 265.195 39.5118L266.091 39.0666C265.183 37.2403 264.213 35.505 263.185 33.8561L262.336 34.3852ZM267.566 44.8587C267.922 45.7639 268.264 46.6891 268.593 47.6348L269.538 47.3064C269.204 46.3483 268.857 45.4105 268.496 44.4927L267.566 44.8587ZM268.588 47.62C268.899 48.6144 269.149 49.5967 269.339 50.566L270.32 50.3736C270.123 49.3675 269.864 48.3497 269.542 47.3212L268.588 47.62ZM269.778 56.5631C269.671 58.6012 269.3 60.5706 268.695 62.4629L269.647 62.7675C270.278 60.7958 270.665 58.7416 270.777 56.6155L269.778 56.5631ZM266.185 67.9364C265.16 69.6304 263.939 71.2432 262.549 72.7656L263.287 73.4399C264.717 71.8734 265.979 70.2086 267.041 68.4542L266.185 67.9364ZM258.106 76.8891C256.547 78.1272 254.868 79.2795 253.091 80.339L253.603 81.1979C255.415 80.1171 257.132 78.9397 258.728 77.6723L258.106 76.8891ZM247.684 83.1451C245.847 83.9699 243.945 84.705 241.995 85.3443L242.306 86.2945C244.289 85.6445 246.224 84.8969 248.094 84.0573L247.684 83.1451ZM236.108 86.9509C234.122 87.3875 232.109 87.726 230.09 87.9608L230.205 88.9541C232.259 88.7154 234.304 88.3713 236.323 87.9276L236.108 86.9509ZM224.004 88.3488C221.956 88.3702 219.92 88.2788 217.915 88.0689L217.811 89.0634C219.855 89.2775 221.93 89.3706 224.015 89.3488L224.004 88.3488ZM211.92 87.0551C209.924 86.5805 207.986 85.972 206.125 85.2234L205.752 86.1512C207.662 86.9194 209.648 87.5426 211.688 88.0279L211.92 87.0551ZM200.715 82.5009C198.998 81.4385 197.384 80.2232 195.897 78.8484L195.218 79.5827C196.755 81.003 198.42 82.2568 200.189 83.3514L200.715 82.5009ZM191.901 74.3277C190.755 72.7312 189.74 70.9858 188.875 69.0849L187.965 69.4991C188.857 71.4588 189.905 73.2609 191.089 74.9109L191.901 74.3277ZM186.872 63.3902C186.621 62.422 186.402 61.4222 186.218 60.3901L185.234 60.5656C185.422 61.6225 185.646 62.6475 185.904 63.6413L186.872 63.3902ZM186.218 60.3901C186.038 59.3799 185.887 58.3867 185.765 57.4104L184.773 57.5344C184.897 58.5285 185.051 59.5389 185.234 60.5656L186.218 60.3901ZM185.372 51.4961C185.363 49.4317 185.496 47.4516 185.766 45.5528L184.776 45.412C184.499 47.3613 184.362 49.39 184.372 51.5005L185.372 51.4961ZM187.077 39.7869C187.686 37.8764 188.454 36.0591 189.372 34.331L188.489 33.8618C187.542 35.6428 186.751 37.5154 186.124 39.483L187.077 39.7869ZM192.599 29.3728C193.8 27.836 195.142 26.3812 196.618 25.005L195.936 24.2737C194.424 25.6835 193.047 27.1766 191.811 28.757L192.599 29.3728ZM201.226 21.2595C202.803 20.1365 204.487 19.0765 206.27 18.0771L205.781 17.2047C203.969 18.2203 202.255 19.2994 200.646 20.4449L201.226 21.2595ZM211.598 15.4005C213.373 14.6005 215.226 13.848 217.151 13.1411L216.806 12.2024C214.86 12.9169 212.986 13.6783 211.187 14.4888L211.598 15.4005ZM222.821 11.2508C224.69 10.6862 226.614 10.1578 228.592 9.66403L228.35 8.69381C226.358 9.19126 224.417 9.72397 222.532 10.2935L222.821 11.2508ZM234.44 8.33495C236.365 7.93784 238.333 7.56931 240.34 7.22818L240.173 6.2423C238.154 6.58528 236.175 6.95596 234.238 7.35557L234.44 8.33495ZM246.277 6.31423C248.231 6.04287 250.219 5.79464 252.238 5.56854L252.126 4.57475C250.099 4.80178 248.103 5.0511 246.139 5.32373L246.277 6.31423ZM258.215 4.9706C260.186 4.79603 262.183 4.64052 264.204 4.50324L264.136 3.50554C262.108 3.64327 260.105 3.7993 258.127 3.9745L258.215 4.9706ZM270.2 4.152C272.181 4.05381 274.182 3.97159 276.202 3.90461L276.169 2.90516C274.143 2.97232 272.137 3.05475 270.151 3.15323L270.2 4.152ZM282.207 3.75059C284.194 3.71406 286.197 3.69108 288.214 3.68095L288.209 2.68096C286.187 2.69111 284.18 2.71415 282.188 2.75076L282.207 3.75059ZM294.223 3.68785C296.214 3.70204 298.218 3.72779 300.233 3.76447L300.251 2.76464C298.233 2.72789 296.225 2.7021 294.23 2.68788L294.223 3.68785ZM306.243 3.90477C307.245 3.93317 308.25 3.96407 309.256 3.99739L309.289 2.99794C308.281 2.96456 307.275 2.93362 306.271 2.90517L306.243 3.90477ZM309.256 3.99739C310.291 4.03164 311.315 4.06468 312.327 4.09654L312.359 3.09704C311.347 3.06519 310.324 3.03217 309.289 2.99794L309.256 3.99739ZM318.413 4.27785C320.489 4.33615 322.514 4.38931 324.489 4.43765L324.514 3.43795C322.54 3.38964 320.516 3.33651 318.441 3.27825L318.413 4.27785ZM330.594 4.57529C332.687 4.61835 334.72 4.65582 336.693 4.68813L336.709 3.68826C334.737 3.65598 332.706 3.61854 330.614 3.5755L330.594 4.57529ZM342.766 4.77397C344.878 4.79898 346.916 4.81786 348.879 4.83128L348.886 3.83131C346.924 3.81789 344.889 3.79903 342.777 3.77404L342.766 4.77397ZM354.969 4.85651C357.094 4.8594 359.121 4.85572 361.053 4.84657L361.048 3.84659C359.119 3.85572 357.094 3.85939 354.97 3.85651L354.969 4.85651ZM367.15 4.79722C369.33 4.77194 371.363 4.73984 373.256 4.7031L373.237 3.70329C371.346 3.73998 369.315 3.77204 367.139 3.79728L367.15 4.79722ZM379.34 4.55852C381.65 4.49309 383.677 4.42317 385.442 4.35568L385.404 3.35641C383.642 3.42379 381.618 3.49359 379.312 3.55892L379.34 4.55852Z"
-                        fill="#FF3D24" />
-                  </svg> -->
-               </div>
-               <h3 class="text-4xl font-semibold">Comprehensive Repair Services</h3>
-               <h3 class="text-4xl font-semibold">900 Five Star Reviews</h3>
-               <h3 class="text-4xl font-semibold">Warranty On Repairs</h3>
+               <h3 class="text-4xl font-semibold text-black text-animation-01">Certified Technicians</h3>
+               <h3 class="text-4xl font-semibold text-black text-animation-01">Comprehensive Repair Services</h3>
+               <h3 class="text-4xl mb-10 font-semibold text-black text-animation-01">900 Five Star Reviews</h3>
+               <h3 class="text-4xl font-semibold text-black text-animation-01">Warranty On Repairs</h3>
             </div>
             <button
                class="inline-flex items-center justify-center whitespace-nowrap text-xl font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary-foreground h-16 w-52 px-4 py-2 bg-red-600 hover:bg-red-700">View
                More</button>
          </div>
-         <div class="w-full lg:w-1/2 mt-8 lg:mt-0">
+         <div class="w-full lg:w-96 lg:mt-0">
             <div class="relative">
-               <img src="src/assets/images/choise.png" alt="Car Repair" class="w-full h-auto object-cover rounded-lg"
-                  width="576" height="671" style="aspect-ratio: 576 / 621; object-fit: cover;">
+               <img src="src/assets/images/choise.png" alt="..." class="w-96 h-96 object-cover rounded-lg">
             </div>
          </div>
       </div>
@@ -319,8 +315,7 @@
             <div class="grid grid-cols-1 gap-8">
                <div class="flex flex-col md:flex-row gap-4"
                   style="background: linear-gradient(90deg, #000 0.34%, rgba(0, 0, 0, 0.00) 91.06%);">
-                  <img src="src/assets/images/service/service1.png" alt="..." class="md:w-1/2 h-auto" width="300"
-                     height="200" style="aspect-ratio: 300 / 200; object-fit: cover;">
+                  <img src="src/assets/images/service/service1.png" alt="..." class="md:w-1/2 h-auto">
                   <div class="md:w-1/2">
                      <h3 class="text-2xl font-bold mb-2">PERFORMANCE UPGRADES AND CUSTOMIZATION</h3>
                      <p class="mb-4">
@@ -330,10 +325,9 @@
                      <a class="underline" href="#">VIEW MORE</a>
                   </div>
                </div>
-               <div class="flex flex-col md:flex-row gap-4"
+               <div class="flex flex-col md:flex-row gap-4 my-12"
                   style="background: linear-gradient(90deg, #000 0.34%, rgba(0, 0, 0, 0.00) 91.06%);">
-                  <img src="src/assets/images/service/service2.png" alt="..." class="md:w-1/2 h-auto" width="300"
-                     height="200" style="aspect-ratio: 300 / 200; object-fit: cover;">
+                  <img src="src/assets/images/service/service2.png" alt="..." class="md:w-1/2 h-auto">
                   <div class="md:w-1/2">
                      <h3 class="text-2xl font-bold mb-2">ENGINE DIAGNOSTICS AND REPAIR</h3>
                      <p class="mb-4">
@@ -345,8 +339,7 @@
                </div>
                <div class="flex flex-col md:flex-row gap-4"
                   style="background: linear-gradient(90deg, #000 0.34%, rgba(0, 0, 0, 0.00) 91.06%);">
-                  <img src="src/assets/images/service/service3.png" alt="..." class="md:w-1/2 h-auto" width="300"
-                     height="200" style="aspect-ratio: 300 / 200; object-fit: cover;">
+                  <img src="src/assets/images/service/service3.png" alt="..." class="md:w-1/2 h-auto">
                   <div class="md:w-1/2">
                      <h3 class="text-2xl font-bold mb-2">TIRE SERVICES</h3>
                      <p class="mb-4">
@@ -374,7 +367,7 @@
 
 
    <div class="py-8">
-      <div class="mx-auto container px-4 md:px-6 lg:px-8 flex justify-between items-center">
+      <div class="mx-auto container px-4 md:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
          <div class="flex flex-col items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="81" height="71" viewBox="0 0 81 71" fill="none">
                <path
@@ -865,9 +858,8 @@
    </div>
 
 
-   <div class="text-white">
+   <div>
       <div class="container mx-auto px-4 py-16">
-         
          <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div class="text-center mb-12">
                <h2 class="text-4xl font-bold uppercase">Our Team</h2>
@@ -1216,7 +1208,8 @@
 
    <div class="py-16 px-8">
       <div class="container mx-auto">
-         <div class="text-center text-white">
+         <!-- <div class="text-center text-white" > -->
+         <div class="text-center bg-cover my-8" style="background-image: url('/src/assets/images/feature.png');">
             <h2 class="text-5xl font-bold uppercase">Blog / News</h2>
             <p class="mt-4 text-xl">
                Lorem ipsum is simply dummy text of the printing and typesetting industry.
@@ -1259,7 +1252,8 @@
    <!-- Footer Top Section start -->
    <div class="bg-black">
       <div class="mx-auto container px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row items-center justify-around">
-         <div class="flex flex-col items-center lg:items-start mb-6 lg:mb-0">
+         <div class="flex flex-col items-center lg:items-start mb-6 lg:mb-0"
+            style="background-image: url('/src/assets/images/feature.png')">
             <h5 class=" md:text-2xl text-md font-bold uppercase tracking-wide mb-1">Sign up for our newsletter
                to get weekly updates<br> on exclusive offers and discounts!</h5>
          </div>
@@ -1284,7 +1278,6 @@
 
 
    <!-- Footer Section end -->
-
    <footer class="bg-black text-white ">
       <div class="mx-auto container py-12 sm:px-6 lg:px-8">
          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-8">
