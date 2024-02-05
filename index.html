@@ -357,6 +357,7 @@
    <!-- choose-us section end -->
 
 
+   <!-- video section start -->
    <section class="relative w-full">
       <img src="src/assets/images/video thumbnail.png" alt="Car" class="w-full h-auto">
       <button
@@ -365,8 +366,37 @@
          <!-- TODO video play button -->
       </button>
    </section>
+   <!-- video section end -->
 
 
+   <!-- Countdown section start -->
+   <div>
+      <div class="text-white py-24 sm:py-32">
+         <div class="mx-auto container px-6 lg:px-8">
+            <dl class="grid grid-cols-1 lg:grid-cols-5 gap-x-8 gap-y-16 text-center">
+               <div class="flex flex-col gap-y-4">
+                  <dd class="order-first text-3xl text-red-500 font-bold sm:text-6xl">10+</dd>
+                  <dt class="text-2xl font-bold uppercase leading-7">YEARS OF SERVICE</dt>
+               </div>
+               <div class="mx-auto flex flex-col gap-y-4 border-r-2 border-red-500 md:flex"></div>
+               <div class="flex flex-col gap-y-4">
+                  <dd class="order-first text-3xl text-red-500 font-bold sm:text-6xl">256+</dd>
+                  <dt class="text-2xl font-bold uppercase leading-7">HAPPY CUSTOMERS</dt>
+               </div>
+               <div class="mx-auto flex flex-col gap-y-4 border-r-2 border-red-500 md:flex"></div>
+               <div class="mx-auto flex flex-col gap-y-4">
+                  <dd class="order-first text-3xl text-red-500 font-bold sm:text-6xl">112</dd>
+                  <dt class="text-2xl font-bold uppercase leading-7">CUSTOMER SATISFACTION</dt>
+               </div>
+            </dl>
+         </div>
+      </div>
+   </div>
+   <!-- Countdown section end -->
+
+
+
+   <!-- Sponsor section start -->
    <div class="py-8">
       <div class="mx-auto container px-4 md:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
          <div class="flex flex-col items-center">
@@ -857,8 +887,10 @@
          </div>
       </div>
    </div>
+   <!-- Sponsor section end -->
 
 
+   <!-- Team section start -->
    <div>
       <div class="container mx-auto px-4 py-16">
          <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -867,9 +899,11 @@
                <p class="mt-4 text-lg">
                   Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                   industry's star.
-               </p><button
+               </p>
+               <button
                   class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary-foreground h-10 px-4 py-2 mt-6 bg-red-600 hover:bg-red-700">View
-                  More</button>
+                  More
+               </button>
             </div>
             <div class="rounded-lg border text-card-foreground shadow-sm bg-gray-800" data-v0-t="card">
                <img src="src/assets/images/team/member1.png" alt="..." class="w-full" width="300" height="300"
@@ -919,6 +953,7 @@
          </div>
       </div>
    </div>
+   <!-- Team section end -->
 
 
    <section class="text-white py-12 px-4 sm:px-6 lg:px-8">
@@ -1070,30 +1105,39 @@
 
    <section>
       <div class="mx-auto container px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24 flexs">
-         <div class=" items-end justify-between sm:flex sm:pe-6 lg:pe-8">
+         <div class="items-center justify-between sm:flex sm:pe-6 lg:pe-8">
             <div class="bg-cover bg-cennter h-24" style="background-image: url('/src/assets/images/feature.png');">
                <h2 class="max-w-xl text-4xl font-bold tracking-tight text-white sm:text-md uppercase">
-                  SEE WHAT OUR Satisfied Customer SAYS
+                  See What Our Satisfied Customer Says
                </h2>
             </div>
-            <div class="mt-8 flex gap-4 lg:mt-0">
-               <button aria-label="Previous slide" id="keen-slider-previous"
-                  class="rounded-full border border-rose-600 p-3 text-rose-600 transition hover:bg-rose-600 hover:text-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                     stroke="currentColor" class="h-5 w-5 rtl:rotate-180">
-                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                  </svg>
-               </button>
-               <button aria-label="Next slide" id="keen-slider-next"
-                  class="rounded-full border border-rose-600 p-3 text-rose-600 transition hover:bg-rose-600 hover:text-white">
-                  <svg class="h-5 w-5 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                     xmlns="http://www.w3.org/2000/svg">
-                     <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                  </svg>
-               </button>
+
+            <div class="mt-8 flex gap-6 lg:mt-0">
+               <div class="flex space-x-4 p-4">
+                  <button aria-label="Previous slide" id="keen-slider-previous"
+                     class="justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary hover:bg-red-500 h-10 border border-white text-white px-4 py-2 flex items-center space-x-2">
+                     <span>PRE</span>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="10" viewBox="0 0 15 10" fill="none">
+                        <path
+                           d="M1.04224 5.1848L0.581426 5.64562L0.120605 5.1848L0.581426 4.72399L1.04224 5.1848ZM13.6688 4.5331C14.0287 4.5331 14.3205 4.82488 14.3205 5.1848C14.3205 5.54472 14.0287 5.83649 13.6688 5.83649V4.5331ZM4.79027 9.85442L0.581426 5.64562L1.50306 4.72399L5.7119 8.93285L4.79027 9.85442ZM0.581426 4.72399L4.79027 0.515137L5.7119 1.43677L1.50306 5.64562L0.581426 4.72399ZM1.04224 4.5331H13.6688V5.83649H1.04224V4.5331Z"
+                           fill="white" />
+                     </svg>
+                  </button>
+                  <button aria-label="Next slide" id="keen-slider-next"
+                     class="justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary hover:bg-primary/90 h-10 border border-white text-white px-4 py-2 flex items-center space-x-2">
+                     <span>NEXT</span>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="10" viewBox="0 0 15 10" fill="none">
+                        <path
+                           d="M13.3376 5.31517L13.7984 4.85435L14.2592 5.31517L13.7984 5.77598L13.3376 5.31517ZM0.711019 5.96686C0.351097 5.96686 0.0593262 5.67509 0.0593262 5.31517C0.0593262 4.95525 0.351097 4.66348 0.711019 4.66348V5.96686ZM9.58951 0.645508L13.7984 4.85435L12.8767 5.77598L8.66786 1.56714L9.58951 0.645508ZM13.7984 5.77598L9.58951 9.98486L8.66786 9.06321L12.8767 4.85435L13.7984 5.77598ZM13.3376 5.96686H0.711019V4.66348H13.3376V5.96686Z"
+                           fill="white" />
+                     </svg>
+                  </button>
+               </div>
             </div>
          </div>
-         <div class="-mx-6 mt-8 lg:col-span-1 md:col-span-1 lg:mx-0">
+
+
+         <div class="-mx-6 mt-8 lg:col-span-2 md:col-span-1 lg:mx-0">
             <div id="keen-slider" class="keen-slider">
                <div class="keen-slider__slide">
                   <blockquote class="flex h-full flex-col justify-between p-6 shadow-sm sm:p-8 lg:p-12">
