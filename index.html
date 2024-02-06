@@ -1299,7 +1299,7 @@
 
 
    <!-- Blog section start -->
-   <div class="py-16 px-8">
+   <div class="py-24 px-8">
       <div class="container mx-auto">
          <div>
             <div class="text-center bg-cover h-32 w-1/2 mx-auto"
@@ -1354,20 +1354,18 @@
    <!-- Blog section end -->
 
 
+
    <!-- Footer Top Section start -->
-   <div class="bg-black">
+   <div class="bg-black pt-12">
       <div class="mx-auto container px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row items-center justify-around">
-         <div class="flex flex-col items-center lg:items-start mb-6 lg:mb-0"
+         <div class="flex flex-col items-center lg:items-start h-20 mb-6 lg:mb-0"
             style="background-image: url('/src/assets/images/feature.png')">
-            <h5 class=" md:text-2xl text-md font-bold uppercase tracking-wide mb-1">Sign up for our newsletter
+            <h5 class="my-auto md:text-2xl text-md font-bold uppercase">Sign up for our newsletter
                to get weekly updates<br> on exclusive offers and discounts!</h5>
          </div>
-         <form class="flex w-full lg:w-auto">
-            <input placeholder="Enter your email..."
-               class="flex-1 px-6 py-3 text-black bg-black placeholder-gray-400 border-1 border-b hover:border-t-4 border-red-600 rounded-l-md focus:ring-red-500 focus:border-red-500"
-               type="email">
-            <button
-               class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 py-2 bg-red-600 text-white rounded-r-md px-4">
+         <form class="flex w-full lg:w-auto border-b opacity-70 border-red-600">
+            <input placeholder="Enter your email..." class="flex-1 px-6 py-3 bg-black" type="email" />
+            <button class="inline-flex items-center h-10 py-2 bg-red-600 hover:bg-red-700 px-4">
                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="48" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   class="text-white">
@@ -1382,31 +1380,43 @@
 
 
 
-
    <!-- Footer Section end -->
    <footer class="bg-black text-white ">
-      <div class="mx-auto container py-12 sm:px-6 lg:px-8">
+      <div class="mx-auto container py-12 sm:px-6 lg:px-8 ">
+         <div class="border-t border-red-700 opacity-50 mb-10"></div>
+         <div class="mb-5">
+            <img src="src/assets/images/logo-red.png" alt="...">
+         </div>
          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-8">
             <div class="lg:col-span-3">
-               <img src="src/assets/images/logo-red.png" alt="...">
-               <p class="text-lg lg:mr-20 my-5">
+               <p class="text-lg lg:mr-48 mb-5 opacity-80">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                   industry's stan. Lorem Ipsum is.
                </p>
                <div class="mt-4 flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="61" viewBox="0 0 60 61" fill="none">
+                  <svg width="60" height="61" viewBox="0 0 60 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <g opacity="0.5">
                         <circle opacity="0.3" cx="30" cy="30.502" r="25" fill="#FF3D24" />
                         <circle opacity="0.3" cx="30" cy="30.502" r="30" fill="#FF3D24" />
                         <circle cx="30" cy="30.502" r="20" fill="#FF3D24" />
                      </g>
+                     <g clip-path="url(#clip0_365_2412)">
+                        <path
+                           d="M38.7613 33.866C37.5368 33.866 36.3345 33.6745 35.1952 33.298C34.6369 33.1076 33.9506 33.2822 33.6099 33.6322L31.3611 35.3298C28.7531 33.9377 27.1467 32.3317 25.7735 29.7433L27.4212 27.5531C27.8493 27.1256 28.0028 26.5011 27.8188 25.9152C27.4407 24.7699 27.2486 23.5682 27.2486 22.3432C27.2487 21.4582 26.5287 20.7383 25.6438 20.7383H21.9709C21.086 20.7383 20.3661 21.4582 20.3661 22.3431C20.3661 32.4864 28.6181 40.7383 38.7613 40.7383C39.6462 40.7383 40.3661 40.0183 40.3661 39.1334V35.4708C40.3661 34.5859 39.6461 33.866 38.7613 33.866Z"
+                           fill="white" />
+                     </g>
+                     <defs>
+                        <clipPath id="clip0_365_2412">
+                           <rect width="20" height="20" fill="white" transform="translate(20.3661 20.7383)" />
+                        </clipPath>
+                     </defs>
                   </svg>
                   <span class="ml-2 text-5xl font-bold">(406) 555-0120</span>
                </div>
             </div>
             <div class="lg:col-span-1">
                <h3 class="text-2xl font-semibold uppercase">Quick Link</h3>
-               <ul class="mt-4 space-y-2">
+               <ul class="mt-4 space-y-2 opacity-80">
                   <li><a class="hover:text-red-600" href="#">About</a></li>
                   <li><a class="hover:text-red-600" href="#">Services</a></li>
                   <li><a class="hover:text-red-600" href="#">Pricing</a></li>
@@ -1416,7 +1426,7 @@
             </div>
             <div class="lg:col-span-1">
                <h3 class="text-2xl font-semibold uppercase">Quick Link</h3>
-               <ul class="mt-4 space-y-2">
+               <ul class="mt-4 space-y-2 opacity-80">
                   <li><a class="hover:text-red-600" href="#">Appointment</a></li>
                   <li><a class="hover:text-red-600" href="#">Blog / News</a></li>
                   <li><a class="hover:text-red-600" href="#">FAQ Question</a></li>
@@ -1432,7 +1442,7 @@
                            d="M7.83533 0.501953C3.9756 0.501953 0.835327 3.4927 0.835327 7.16863C0.835327 8.27215 1.12502 9.36629 1.67574 10.3368L7.45253 18.2871C7.52943 18.4198 7.67598 18.502 7.83533 18.502C7.99467 18.502 8.14122 18.4198 8.21813 18.2871L13.9971 10.3335C14.5456 9.36629 14.8353 8.27211 14.8353 7.16859C14.8353 3.4927 11.6951 0.501953 7.83533 0.501953ZM7.83533 10.502C5.90546 10.502 4.33535 9.0066 4.33535 7.16863C4.33535 5.33066 5.90546 3.83531 7.83533 3.83531C9.76519 3.83531 11.3353 5.33066 11.3353 7.16863C11.3353 9.0066 9.76519 10.502 7.83533 10.502Z"
                            fill="white" />
                      </svg>
-                     <span class="ml-2">901 N Pitt Str, Suite 170 <br> Alexandria, NY, USA</span>
+                     <span class="ml-2 opacity-80">901 N Pitt Str, Suite 170 <br> Alexandria, NY, USA</span>
                   </li>
                   <li class="flex items-center">
                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18" fill="none">
@@ -1456,7 +1466,7 @@
                            </clipPath>
                         </defs>
                      </svg>
-                     <span class="ml-2">example@email.com</span>
+                     <span class="ml-2 opacity-80">example@email.com</span>
                   </li>
                   <li class="flex items-center">
                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
@@ -1487,13 +1497,14 @@
                            </clipPath>
                         </defs>
                      </svg>
-                     <span class="ml-2">Sun - Thu: Open 24/7</span>
+                     <span class="ml-2 opacity-80">Sun - Thu: Open 24/7</span>
                   </li>
                </ul>
             </div>
          </div>
-         <div class="mt-8 border-t border-gray-700 pt-8 flex justify-between items-center">
-            <p class="text-sm text-gray-400">Copyright 2024, All Right reserved</p>
+         <div class="border-t border-red-700 opacity-50 my-10"></div>
+         <div class="flex justify-between items-center">
+            <p class="text-sm text-white opacity-80">Copyright 2024, All Right reserved</p>
             <div class="flex mt-4 space-x-6 ">
                <a class="text-gray-400 hover:text-red-600" href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 24 24" fill="none"
@@ -1668,7 +1679,6 @@
       keenSliderPreviousDesktop.addEventListener('click', () => keenSlider.prev())
       keenSliderNextDesktop.addEventListener('click', () => keenSlider.next())
    </script>
-
 
 </body>
 
