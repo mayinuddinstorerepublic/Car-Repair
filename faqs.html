@@ -11,12 +11,14 @@
     <link rel="icon" href="src/assets/images/favicon.ico" />
     <!-- Site Title -->
     <link rel="stylesheet" href="output/tailwind.css" />
+    
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-    <!-- <style>
-        .text-animation-01 {
-            -webkit-text-stroke: 1px #ffffff;
+    <style>
+        [x-cloak] {
+            display: none !important;
         }
-    </style> -->
+    </style>
 </head>
 
 <body class="scroll-smooth bg-gray-900 text-white">
@@ -92,98 +94,126 @@
     <!-- Navbar Section End -->
 
     <!-- About Banner start -->
-    <div>
-        <div class="relative">
-            <img src="src/assets/images/about-banner.png" alt="...">
-            <div class="mx-auto container absolute top-52">
-                <h4 class="text-white text-2xl font-bold uppercase">About</h4>
-                <p class="text-white text-lg">Home / About Us</p>
-            </div>
+    <div class="absolute">
+        <img src="src/assets/images/about-banner.png" alt="...">
+        <div class="absolute top-52 mx-auto container">
+            <h4 class="text-white text-2xl font-bold uppercase">About</h4>
+            <p class="text-white text-lg">Home / About Us</p>
         </div>
     </div>
     <!-- About Banner end -->
 
-    <div>
-        <div class="bg-white py-4 sm:py-6">
-            <div class="mx-auto container px-6 lg:px-8">
-                <ul role="list"
-                    class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-0 gap-y-0 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                    <div class="m-2 space-y-2">
-                        <div class="group flex flex-col gap-1 p-5 text-gray" tabindex="1">
-                            <div style="width:320px;"
-                                class="group relative m-0 flex h-72 w-72 ring-gray-900/5 sm:mx-auto sm:max-w-lg">
-                                <div
-                                    class="z-10 h-full w-full overflow-hidden border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
-                                    <img src="src/assets/images/blog/blog1.png"
-                                        class="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
-                                        alt="..." />
-                                </div>
-                                <div style="background-color: Gray; width:90%;"
-                                    class="p-3  opacity-60 absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110 group-hover:opacity-100">
-                                    <h1 class="text-lg font-bold text-white ">Juliet Smith</h1>
-                                    <h2 class="text-m font-light text-gray-200 ">Team Leader</h2>
-                                </div>
-
-                            </div>
 
 
-                            <div
-                                class="invisible h-auto max-h-0 p-5 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
 
-                                <p style="font-size: .9em;" v-html="This is all about John"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="m-2 space-y-2">
-                        <div class="group flex flex-col gap-1 p-5 text-gray" tabindex="1">
-                            <div style="width:320px;"
-                                class="group relative m-0 flex h-72 w-72 ring-gray-900/5 sm:mx-auto sm:max-w-lg">
-                                <div
-                                    class="z-10 h-full w-full overflow-hidden border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
-                                    <img src="https://img.freepik.com/free-photo/businesspeople-office-meeting_23-2148908969.jpg"
-                                        class="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
-                                        alt="..." />
-                                </div>
-                                <div style="background-color: Gray; width:90%;"
-                                    class="p-3  opacity-60 absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110 group-hover:opacity-100">
-                                    <h1 class="text-lg font-bold text-white ">Juliet Smith</h1>
-                                    <h2 class="text-m font-light text-gray-200 ">Team Leader</h2>
-                                </div>
-                            </div>
-                            <div
-                                class="invisible h-auto max-h-0 p-5 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
 
-                                <p style="font-size: .9em;" v-html="This is all about John"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="m-2 space-y-2">
-                        <div class="group flex flex-col gap-1 p-5 text-gray" tabindex="1">
-                            <div style="width:320px;"
-                                class="group relative m-0 flex h-72 w-72 ring-gray-900/5 sm:mx-auto sm:max-w-lg">
-                                <div
-                                    class="z-10 h-full w-full overflow-hidden border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-70">
-                                    <img src="https://img.freepik.com/free-photo/businesspeople-office-meeting_23-2148908969.jpg"
-                                        class="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
-                                        alt="..." />
-                                </div>
-                                <div style="background-color: Gray; width:90%;"
-                                    class="p-3  opacity-60 absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110 group-hover:opacity-100">
-                                    <h1 class="text-lg font-bold text-white ">Juliet Smith</h1>
-                                    <h2 class="text-m font-light text-gray-200 ">Team Leader</h2>
-                                </div>
-                            </div>
-                            <div
-                                class="invisible h-auto max-h-0 p-5 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
 
-                                <p style="font-size: .9em;" v-html="This is all about John"></p>
-                            </div>
-                        </div>
-                    </div>
-                </ul>
+
+<!-- Layout -->
+<div class="h-screen max-w-5xl px-2 py-3 mx-auto mt-32 tracking-wide md:px-4 md:mt-44">
+    <!-- Title -->
+    <div class="flex justify-center text-3xl">Frequently Asked Questions</div>
+    <!-- End Title -->
+
+    <!-- Accordion -->
+    <div class="grid gap-3 py-8 text-lg leading-6 text-gray-800 md:gap-8 md:grid-cols-2">
+        <div class="space-y-3">
+        <!-- 1 -->
+        <div x-data="accordion(1)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
+            <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+            <div class="flex items-center justify-between">
+                <span class="tracking-wide">What is x-data ?</span>
+                <span :class="handleRotate()" class="transition-transform duration-500 transform fill-current ">
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+                </span>
+            </div>
+            </div>
+
+            <div x-ref="tab" :style="handleToggle()" class="relative overflow-hidden transition-all duration-700 max-h-0">
+            <div class="px-6 pb-4 text-gray-600">
+                Declare a new Alpine component and its data for a block of HTML </div>
             </div>
         </div>
+        <!-- End 1 -->
+
+        <!-- 2 -->
+        <div x-data="accordion(2)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
+            <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+            <div class="flex items-center justify-between">
+                <span class="tracking-wide">What is x-bind ?</span>
+                <span :class="handleRotate()" class="transition-transform duration-500 transform fill-current ">
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+                </span>
+            </div>
+            </div>
+
+            <div x-ref="tab" :style="handleToggle()" class="relative overflow-hidden transition-all duration-700 max-h-0">
+            <div class="px-6 pb-4 text-gray-600">
+                Dynamically set HTML attributes on an element.
+            </div>
+            </div>
+        </div>
+        <!-- End 2 -->
+        </div>
+
+        <div class="space-y-3">
+        <!-- 3 -->
+        <div x-data="accordion(3)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
+            <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+            <div class="flex items-center justify-between">
+                <span class="tracking-wide">What is $store ?</span>
+                <span :class="handleRotate()" class="transition-transform duration-500 transform fill-current ">
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+                </span>
+            </div>
+            </div>
+
+            <div x-ref="tab" :style="handleToggle()" class="relative overflow-hidden transition-all duration-700 max-h-0">
+            <div class="px-6 pb-4 text-gray-600">
+                Access a global store registered using Alpine.store(...)
+            </div>
+            </div>
+        </div>
+        <!-- End 3 -->
+
+        <!-- 4 -->
+        <div x-data="accordion(4)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
+            <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+            <div class="flex items-center justify-between">
+                <span class="tracking-wide">What is x-on ?</span>
+                <span :class="handleRotate()" class="transition-transform duration-500 transform fill-current ">
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+                </span>
+            </div>
+            </div>
+
+            <div x-ref="tab" :style="handleToggle()" class="relative overflow-hidden transition-all duration-700 max-h-0">
+            <div class="px-6 pb-4 text-gray-600">
+                Listen for browser events on an element
+            </div>
+            </div>
+        </div>
+        <!-- End 4 -->
+        </div>
     </div>
+    <!-- End Accordion -->
+    </div>
+    <!-- End Layout -->
+
+
+
+
+
+
+
 
     <!-- Footer Top Section start -->
     <div class="bg-black">
@@ -372,6 +402,36 @@
     <!-- Footer Section end -->
 
     <script src="src/assets/js/main.js"></script>
+
+    <script>
+        // Faq
+        document.addEventListener("alpine:init", () => {
+            Alpine.store("accordion", {
+                tab: 0
+            });
+
+            Alpine.data("accordion", (idx) => ({
+                init() {
+                    this.idx = idx;
+                },
+                idx: -1,
+                handleClick() {
+                    this.$store.accordion.tab =
+                        this.$store.accordion.tab === this.idx ? 0 : this.idx;
+                },
+                handleRotate() {
+                    return this.$store.accordion.tab === this.idx ? "-rotate-180" : "";
+                },
+                handleToggle() {
+                    return this.$store.accordion.tab === this.idx
+                        ? `max-height: ${this.$refs.tab.scrollHeight}px`
+                        : "";
+                }
+            }));
+        });
+        //  end faq
+
+    </script>
 </body>
 
 </html>
