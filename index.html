@@ -1081,34 +1081,45 @@
    <div>
       <div class="container mx-auto px-4 py-16">
          <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div class="text-center mb-12">
+            <div class="text-left mb-12">
                <h2 class="text-4xl font-bold uppercase">Our Team</h2>
-               <p class="mt-4 text-lg">
+               <p class="mt-6 text-md lg:mr-12">
                   Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                   industry's star.
                </p>
-               <button class="inline-flex whitespace-nowrap rounded-md text-sm font-medium">
-                  More
-               </button>
+               <button class="border-b-2 border-red-500 text-lg uppercase lg:mt-16">View More</button>
             </div>
-            <div class="text-card-foreground shadow-sm bg-gray-800" data-v0-t="card">
+            <div class="relative shadow-sm" data-v0-t="card">
                <img src="src/assets/images/team/member1.png" alt="..." class="w-full">
-               <div class="text-center p-4">
-                  <h3 class="text-xl font-semibold">Michael Jack</h3>
-                  <p class="text-sm text-gray-400">Founder CEO</p>
+               <div class="flex justify-center items-center h-full absolute inset-0">
+                  <!-- Initial state: Show "Founder CEO" text -->
+                  <div class="text-center px-20 py-6 bg-black transition-opacity duration-300 opacity-100 ">
+                     <h3 class="text-xl font-semibold animate-pulse">Michael Jack</h3>
+                     <p class="text-md mt-4 text-gray-400 hover:opacity-0">Founder CEO</p>
+                  </div>
+                  <!-- Hover state: Show icon -->
+                  <div
+                     class="hidden absolute inset-0 items-center justify-center text-white transition-opacity duration-300 opacity-0 hover:opacity-100">
+                     <!-- Your icon here, e.g., using Font Awesome -->
+                     <i class="fas fa-icons text-6xl"></i>
+                  </div>
                </div>
             </div>
+
+
+
+
+
+
             <div class="text-card-foreground shadow-sm bg-gray-800" data-v0-t="card">
-               <img src="src/assets/images/team/member2.png" alt="..." class="w-full" width="300" height="300"
-                  style="aspect-ratio: 300 / 300; object-fit: cover;">
-               <div class="text-center p-4">
+               <img src="src/assets/images/team/member2.png" alt="..." class="w-full">
+               <div class="text-center p-4 mx-auto">
                   <h3 class="text-xl font-semibold">Cathy Sparkman</h3>
                   <p class="text-sm text-gray-400">Main Mechanic</p>
                </div>
             </div>
             <div class="text-card-foreground shadow-sm bg-gray-800" data-v0-t="card">
-               <img src="src/assets/images/team/member3.png" alt="..." class="w-full" width="300" height="300"
-                  style="aspect-ratio: 300 / 300; object-fit: cover;">
+               <img src="src/assets/images/team/member3.png" alt="..." class="w-full">
                <div class="text-center p-4">
                   <h3 class="text-xl font-semibold">Tyra Crawford</h3>
                   <p class="text-sm text-gray-400">Marketing</p>
@@ -1394,23 +1405,24 @@
                   industry's stan. Lorem Ipsum is.
                </p>
                <div class="mt-4 flex items-center">
-                  <svg width="60" height="61" viewBox="0 0 60 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <g opacity="0.5">
-                        <circle opacity="0.3" cx="30" cy="30.502" r="25" fill="#FF3D24" />
-                        <circle opacity="0.3" cx="30" cy="30.502" r="30" fill="#FF3D24" />
-                        <circle cx="30" cy="30.502" r="20" fill="#FF3D24" />
-                     </g>
-                     <g clip-path="url(#clip0_365_2412)">
-                        <path
-                           d="M38.7613 33.866C37.5368 33.866 36.3345 33.6745 35.1952 33.298C34.6369 33.1076 33.9506 33.2822 33.6099 33.6322L31.3611 35.3298C28.7531 33.9377 27.1467 32.3317 25.7735 29.7433L27.4212 27.5531C27.8493 27.1256 28.0028 26.5011 27.8188 25.9152C27.4407 24.7699 27.2486 23.5682 27.2486 22.3432C27.2487 21.4582 26.5287 20.7383 25.6438 20.7383H21.9709C21.086 20.7383 20.3661 21.4582 20.3661 22.3431C20.3661 32.4864 28.6181 40.7383 38.7613 40.7383C39.6462 40.7383 40.3661 40.0183 40.3661 39.1334V35.4708C40.3661 34.5859 39.6461 33.866 38.7613 33.866Z"
-                           fill="white" />
-                     </g>
-                     <defs>
-                        <clipPath id="clip0_365_2412">
-                           <rect width="20" height="20" fill="white" transform="translate(20.3661 20.7383)" />
-                        </clipPath>
-                     </defs>
-                  </svg>
+                  <span class="relative flex h-10 w-10 items-center justify-center">
+                     <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                     <span class="items-center justify-center relative inline-flex rounded-full h-10 w-10 bg-red-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                           <g clip-path="url(#clip0_365_2417)">
+                              <path
+                                 d="M18.7613 13.866C17.5368 13.866 16.3345 13.6745 15.1952 13.298C14.6369 13.1076 13.9506 13.2822 13.6099 13.6322L11.3611 15.3298C8.75312 13.9377 7.14666 12.3317 5.77354 9.74333L7.42119 7.55312C7.84927 7.12563 8.00281 6.50115 7.81885 5.91521C7.44072 4.7699 7.24864 3.56818 7.24864 2.34318C7.24869 1.45823 6.52875 0.738281 5.64385 0.738281H1.97093C1.08604 0.738281 0.366089 1.45823 0.366089 2.34312C0.366089 12.4864 8.61807 20.7383 18.7613 20.7383C19.6462 20.7383 20.3661 20.0183 20.3661 19.1334V15.4708C20.3661 14.5859 19.6461 13.866 18.7613 13.866Z"
+                                 fill="white" />
+                           </g>
+                           <defs>
+                              <clipPath id="clip0_365_2417">
+                                 <rect width="20" height="20" fill="white" transform="translate(0.366089 0.738281)" />
+                              </clipPath>
+                           </defs>
+                        </svg>
+                     </span>
+                  </span>
                   <span class="ml-2 text-5xl font-bold">(406) 555-0120</span>
                </div>
             </div>
