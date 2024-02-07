@@ -103,78 +103,285 @@
     </div>
     <!-- About Banner end -->
 
-    <!-- Team section start -->
-    <div>
-        <div class="container mx-auto px-4 py-16">
-            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div class="text-left mb-12">
-                    <h2 class="text-4xl font-bold uppercase">Our Team</h2>
-                    <p class="mt-6 text-md lg:mr-12">
-                        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the
-                        industry's star.
-                    </p>
-                    <button class="border-b-2 border-red-500 text-lg uppercase lg:mt-16">View More</button>
-                </div>
-                <div class="relative shadow-sm" data-v0-t="card">
-                    <img src="src/assets/images/team/member1.png" alt="..." class="w-full">
-                    <div class="flex justify-center">
-                        <div class="absolute bottom-16 text-center px-20 py-6 bg-black">
-                            <h3 class="text-xl font-semibold">Michael Jack</h3>
-                            <p class="text-md mt-4 text-gray-400 hover:text-transparent">Founder CEO</p>
+
+
+    <!-- Cart start -->
+    <div class="relative font-inter antialiased">
+        <main class="relative min-h-screen flex flex-col justify-center bg-slate-900 overflow-hidden">
+            <div class="w-full container mx-auto px-4 md:px-6 ">
+                <!-- Cards Hover Effect -->
+                <section class="grid md:grid-cols-3 gap-6 max-md:max-w-xs mx-auto">
+                    <!-- Card #1 -->
+                    <div
+                        class="group [background:linear-gradient(theme(colors.slate.900),theme(colors.slate.900))_padding-box,linear-gradient(45deg,theme(colors.slate.800),theme(colors.slate.600/.8),theme(colors.slate.800))_border-box] relative before:absolute before:inset-0 before:bg-[url('./noise.png')] before:bg-[length:352px_382px] rounded-2xl border border-transparent">
+                        <div class="relative">
+                            <div class="">
+                                <img src="src/assets/images/team/member1.png" alt="..." class="w-full">
+                            </div>
+                            <div
+                                class="flex justify-center relative group-hover:-translate-y-1 transition-transform duration-500 ease-in-out">
+                                <div class="absolute -bottom-12 text-center px-20 py-6 bg-black">
+                                    <h3 class="text-xl font-semibold">Michael Jack</h3>
+                                    <p class="group-hover:opacity-0 transition-opacity duration-500">Founder CEO</p>
+                                    <div
+                                        class="flex justify-center top-14 gap-3 absolute opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                        <div
+                                            class="border-2 border-opacity-60 hover:border-opacity-0 duration-300 hover:border-0 p-2 hover:bg-red-700">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                                viewBox="0 0 14 15" fill="none">
+                                                <g clip-path="url(#clip0_387_109)">
+                                                    <path
+                                                        d="M13.9965 14.9012L14 14.9006L14 9.76609C14 7.25425 13.4592 5.31934 10.5227 5.31934C9.11107 5.31934 8.16374 6.094 7.77699 6.82842H7.73615V5.55384H4.9519L4.9519 14.9006H7.85107L7.85107 10.2724C7.85107 9.05384 8.08207 7.8755 9.59115 7.8755C11.0781 7.8755 11.1002 9.26617 11.1002 10.3506L11.1002 14.9012H13.9965Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M0.231079 5.55469L3.13375 5.55469L3.13375 14.9014H0.231079L0.231079 5.55469Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M1.68117 0.900879C0.753083 0.900879 0 1.65396 0 2.58205C0 3.51013 0.753083 4.27896 1.68117 4.27896C2.60925 4.27896 3.36233 3.51013 3.36233 2.58205C3.36175 1.65396 2.60867 0.900879 1.68117 0.900879Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_387_109">
+                                                        <rect width="14" height="14" fill="white"
+                                                            transform="translate(0 0.900879)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div
+                                            class="border-2 border-opacity-60 hover:border-opacity-0 duration-300 hover:border-0 p-2 hover:bg-red-700">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                                viewBox="0 0 14 15" fill="none">
+                                                <g clip-path="url(#clip0_387_109)">
+                                                    <path
+                                                        d="M13.9965 14.9012L14 14.9006L14 9.76609C14 7.25425 13.4592 5.31934 10.5227 5.31934C9.11107 5.31934 8.16374 6.094 7.77699 6.82842H7.73615V5.55384H4.9519L4.9519 14.9006H7.85107L7.85107 10.2724C7.85107 9.05384 8.08207 7.8755 9.59115 7.8755C11.0781 7.8755 11.1002 9.26617 11.1002 10.3506L11.1002 14.9012H13.9965Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M0.231079 5.55469L3.13375 5.55469L3.13375 14.9014H0.231079L0.231079 5.55469Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M1.68117 0.900879C0.753083 0.900879 0 1.65396 0 2.58205C0 3.51013 0.753083 4.27896 1.68117 4.27896C2.60925 4.27896 3.36233 3.51013 3.36233 2.58205C3.36175 1.65396 2.60867 0.900879 1.68117 0.900879Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_387_109">
+                                                        <rect width="14" height="14" fill="white"
+                                                            transform="translate(0 0.900879)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div
+                                            class="border-2 border-opacity-60 hover:border-opacity-0 duration-300 hover:border-0 p-2 hover:bg-red-700">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                                viewBox="0 0 14 15" fill="none">
+                                                <g clip-path="url(#clip0_387_109)">
+                                                    <path
+                                                        d="M13.9965 14.9012L14 14.9006L14 9.76609C14 7.25425 13.4592 5.31934 10.5227 5.31934C9.11107 5.31934 8.16374 6.094 7.77699 6.82842H7.73615V5.55384H4.9519L4.9519 14.9006H7.85107L7.85107 10.2724C7.85107 9.05384 8.08207 7.8755 9.59115 7.8755C11.0781 7.8755 11.1002 9.26617 11.1002 10.3506L11.1002 14.9012H13.9965Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M0.231079 5.55469L3.13375 5.55469L3.13375 14.9014H0.231079L0.231079 5.55469Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M1.68117 0.900879C0.753083 0.900879 0 1.65396 0 2.58205C0 3.51013 0.753083 4.27896 1.68117 4.27896C2.60925 4.27896 3.36233 3.51013 3.36233 2.58205C3.36175 1.65396 2.60867 0.900879 1.68117 0.900879Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_387_109">
+                                                        <rect width="14" height="14" fill="white"
+                                                            transform="translate(0 0.900879)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-
-
-
-
-                <div class="text-card-foreground shadow-sm bg-gray-800" data-v0-t="card">
-                    <img src="src/assets/images/team/member2.png" alt="..." class="w-full">
-                    <div class="text-center p-4 mx-auto">
-                        <h3 class="text-xl font-semibold">Cathy Sparkman</h3>
-                        <p class="text-sm text-gray-400">Main Mechanic</p>
-                    </div>
-                </div>
-                <div class="text-card-foreground shadow-sm bg-gray-800" data-v0-t="card">
-                    <img src="src/assets/images/team/member3.png" alt="..." class="w-full">
-                    <div class="text-center p-4">
-                        <h3 class="text-xl font-semibold">Tyra Crawford</h3>
-                        <p class="text-sm text-gray-400">Marketing</p>
-                        <div class="flex justify-center space-x-2 mt-2">
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="text-blue-500">
-                                <path
-                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                                </path>
-                                <rect width="4" height="12" x="2" y="9"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="text-blue-700">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                            </svg>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="text-blue-400">
-                                <path
-                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
-                                </path>
-                            </svg>
-
+                    <!-- Card #2 -->
+                    <div
+                        class="group relative before:absolute before:inset-0 rounded-2xl border border-transparent">
+                        <div class="relative">
+                            <div class="">
+                                <img src="src/assets/images/team/member2.png" alt="..." class="w-full">
+                            </div>
+                            <div
+                                class="flex justify-center relative group-hover:-translate-y-1 transition-transform duration-500 ease-in-out">
+                                <div class="absolute -bottom-12 text-center px-20 py-6 bg-black">
+                                    <h3 class="text-xl font-semibold">Michael Jack</h3>
+                                    <p class="group-hover:opacity-0 transition-opacity duration-500">Founder CEO</p>
+                                    <div
+                                        class="flex justify-center top-14 gap-3 absolute opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                        <div
+                                            class="border-2 border-opacity-60 hover:border-opacity-0 duration-300 hover:border-0 p-2 hover:bg-red-700">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                                viewBox="0 0 14 15" fill="none">
+                                                <g clip-path="url(#clip0_387_109)">
+                                                    <path
+                                                        d="M13.9965 14.9012L14 14.9006L14 9.76609C14 7.25425 13.4592 5.31934 10.5227 5.31934C9.11107 5.31934 8.16374 6.094 7.77699 6.82842H7.73615V5.55384H4.9519L4.9519 14.9006H7.85107L7.85107 10.2724C7.85107 9.05384 8.08207 7.8755 9.59115 7.8755C11.0781 7.8755 11.1002 9.26617 11.1002 10.3506L11.1002 14.9012H13.9965Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M0.231079 5.55469L3.13375 5.55469L3.13375 14.9014H0.231079L0.231079 5.55469Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M1.68117 0.900879C0.753083 0.900879 0 1.65396 0 2.58205C0 3.51013 0.753083 4.27896 1.68117 4.27896C2.60925 4.27896 3.36233 3.51013 3.36233 2.58205C3.36175 1.65396 2.60867 0.900879 1.68117 0.900879Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_387_109">
+                                                        <rect width="14" height="14" fill="white"
+                                                            transform="translate(0 0.900879)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div
+                                            class="border-2 border-opacity-60 hover:border-opacity-0 duration-300 hover:border-0 p-2 hover:bg-red-700">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                                viewBox="0 0 14 15" fill="none">
+                                                <g clip-path="url(#clip0_387_109)">
+                                                    <path
+                                                        d="M13.9965 14.9012L14 14.9006L14 9.76609C14 7.25425 13.4592 5.31934 10.5227 5.31934C9.11107 5.31934 8.16374 6.094 7.77699 6.82842H7.73615V5.55384H4.9519L4.9519 14.9006H7.85107L7.85107 10.2724C7.85107 9.05384 8.08207 7.8755 9.59115 7.8755C11.0781 7.8755 11.1002 9.26617 11.1002 10.3506L11.1002 14.9012H13.9965Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M0.231079 5.55469L3.13375 5.55469L3.13375 14.9014H0.231079L0.231079 5.55469Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M1.68117 0.900879C0.753083 0.900879 0 1.65396 0 2.58205C0 3.51013 0.753083 4.27896 1.68117 4.27896C2.60925 4.27896 3.36233 3.51013 3.36233 2.58205C3.36175 1.65396 2.60867 0.900879 1.68117 0.900879Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_387_109">
+                                                        <rect width="14" height="14" fill="white"
+                                                            transform="translate(0 0.900879)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div
+                                            class="border-2 border-opacity-60 hover:border-opacity-0 duration-300 hover:border-0 p-2 hover:bg-red-700">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                                viewBox="0 0 14 15" fill="none">
+                                                <g clip-path="url(#clip0_387_109)">
+                                                    <path
+                                                        d="M13.9965 14.9012L14 14.9006L14 9.76609C14 7.25425 13.4592 5.31934 10.5227 5.31934C9.11107 5.31934 8.16374 6.094 7.77699 6.82842H7.73615V5.55384H4.9519L4.9519 14.9006H7.85107L7.85107 10.2724C7.85107 9.05384 8.08207 7.8755 9.59115 7.8755C11.0781 7.8755 11.1002 9.26617 11.1002 10.3506L11.1002 14.9012H13.9965Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M0.231079 5.55469L3.13375 5.55469L3.13375 14.9014H0.231079L0.231079 5.55469Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M1.68117 0.900879C0.753083 0.900879 0 1.65396 0 2.58205C0 3.51013 0.753083 4.27896 1.68117 4.27896C2.60925 4.27896 3.36233 3.51013 3.36233 2.58205C3.36175 1.65396 2.60867 0.900879 1.68117 0.900879Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_387_109">
+                                                        <rect width="14" height="14" fill="white"
+                                                            transform="translate(0 0.900879)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <!-- Card #3 -->
+                    <div
+                        class="group [background:linear-gradient(theme(colors.slate.900),theme(colors.slate.900))_padding-box,linear-gradient(45deg,theme(colors.slate.800),theme(colors.slate.600/.8),theme(colors.slate.800))_border-box] relative before:absolute before:inset-0 before:bg-[url('./noise.png')] before:bg-[length:352px_382px] rounded-2xl border border-transparent">
+                        <div class="relative">
+                            <div class="">
+                                <img src="src/assets/images/team/member3.png" alt="..." class="w-full">
+                            </div>
+                            <div
+                                class="flex justify-center relative group-hover:-translate-y-1 transition-transform duration-500 ease-in-out">
+                                <div class="absolute -bottom-12 text-center px-20 py-6 bg-black">
+                                    <h3 class="text-xl font-semibold">Michael Jack</h3>
+                                    <p class="group-hover:opacity-0 transition-opacity duration-500">Founder CEO</p>
+                                    <div
+                                        class="flex justify-center top-14 gap-3 absolute opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                        <div
+                                            class="border-2 border-opacity-60 hover:border-opacity-0 duration-300 hover:border-0 p-2 hover:bg-red-700">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                                viewBox="0 0 14 15" fill="none">
+                                                <g clip-path="url(#clip0_387_109)">
+                                                    <path
+                                                        d="M13.9965 14.9012L14 14.9006L14 9.76609C14 7.25425 13.4592 5.31934 10.5227 5.31934C9.11107 5.31934 8.16374 6.094 7.77699 6.82842H7.73615V5.55384H4.9519L4.9519 14.9006H7.85107L7.85107 10.2724C7.85107 9.05384 8.08207 7.8755 9.59115 7.8755C11.0781 7.8755 11.1002 9.26617 11.1002 10.3506L11.1002 14.9012H13.9965Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M0.231079 5.55469L3.13375 5.55469L3.13375 14.9014H0.231079L0.231079 5.55469Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M1.68117 0.900879C0.753083 0.900879 0 1.65396 0 2.58205C0 3.51013 0.753083 4.27896 1.68117 4.27896C2.60925 4.27896 3.36233 3.51013 3.36233 2.58205C3.36175 1.65396 2.60867 0.900879 1.68117 0.900879Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_387_109">
+                                                        <rect width="14" height="14" fill="white"
+                                                            transform="translate(0 0.900879)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div
+                                            class="border-2 border-opacity-60 hover:border-opacity-0 duration-300 hover:border-0 p-2 hover:bg-red-700">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                                viewBox="0 0 14 15" fill="none">
+                                                <g clip-path="url(#clip0_387_109)">
+                                                    <path
+                                                        d="M13.9965 14.9012L14 14.9006L14 9.76609C14 7.25425 13.4592 5.31934 10.5227 5.31934C9.11107 5.31934 8.16374 6.094 7.77699 6.82842H7.73615V5.55384H4.9519L4.9519 14.9006H7.85107L7.85107 10.2724C7.85107 9.05384 8.08207 7.8755 9.59115 7.8755C11.0781 7.8755 11.1002 9.26617 11.1002 10.3506L11.1002 14.9012H13.9965Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M0.231079 5.55469L3.13375 5.55469L3.13375 14.9014H0.231079L0.231079 5.55469Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M1.68117 0.900879C0.753083 0.900879 0 1.65396 0 2.58205C0 3.51013 0.753083 4.27896 1.68117 4.27896C2.60925 4.27896 3.36233 3.51013 3.36233 2.58205C3.36175 1.65396 2.60867 0.900879 1.68117 0.900879Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_387_109">
+                                                        <rect width="14" height="14" fill="white"
+                                                            transform="translate(0 0.900879)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div
+                                            class="border-2 border-opacity-60 hover:border-opacity-0 duration-300 hover:border-0 p-2 hover:bg-red-700">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                                                viewBox="0 0 14 15" fill="none">
+                                                <g clip-path="url(#clip0_387_109)">
+                                                    <path
+                                                        d="M13.9965 14.9012L14 14.9006L14 9.76609C14 7.25425 13.4592 5.31934 10.5227 5.31934C9.11107 5.31934 8.16374 6.094 7.77699 6.82842H7.73615V5.55384H4.9519L4.9519 14.9006H7.85107L7.85107 10.2724C7.85107 9.05384 8.08207 7.8755 9.59115 7.8755C11.0781 7.8755 11.1002 9.26617 11.1002 10.3506L11.1002 14.9012H13.9965Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M0.231079 5.55469L3.13375 5.55469L3.13375 14.9014H0.231079L0.231079 5.55469Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M1.68117 0.900879C0.753083 0.900879 0 1.65396 0 2.58205C0 3.51013 0.753083 4.27896 1.68117 4.27896C2.60925 4.27896 3.36233 3.51013 3.36233 2.58205C3.36175 1.65396 2.60867 0.900879 1.68117 0.900879Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_387_109">
+                                                        <rect width="14" height="14" fill="white"
+                                                            transform="translate(0 0.900879)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End: Cards Hover Effect -->
             </div>
-        </div>
+        </main>
     </div>
-    <!-- Team section end -->
+    <!-- Cart end -->
+
 
     <div>
         <div class="bg-white py-4 sm:py-6">
@@ -286,7 +493,7 @@
 
 
     <!-- Footer Section end -->
-    <footer class="bg-black text-white ">
+    <footer class="bg-black ">
         <div class="mx-auto container py-12 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-8">
                 <div class="lg:col-span-3">
