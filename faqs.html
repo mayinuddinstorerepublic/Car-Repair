@@ -11,7 +11,7 @@
     <link rel="icon" href="src/assets/images/favicon.ico" />
     <!-- Site Title -->
     <link rel="stylesheet" href="output/tailwind.css" />
-    
+
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     <style>
@@ -21,7 +21,7 @@
     </style>
 </head>
 
-<body class="scroll-smooth bg-gray-900 text-white">
+<body class="scroll-smooth text-white" style="background-color: #101010">
 
     <!-- Navbar Section Start -->
     <nav class="backdrop-blur-sm bg-black sticky top-0 z-10">
@@ -48,7 +48,7 @@
                 </div>
                 <div class="sm:items-stretch sm:justify-start">
                     <div class="flex flex-shrink-0 items-center">
-                        <img class="h-8 w-auto" src="src/assets//images/logo.png" alt="...">
+                        <a href="/"><img class="h-8 w-auto" src="src/assets//images/logo.png" alt="..."></a>
                     </div>
                 </div>
                 <div class="hidden justify-center sm:ml-6 sm:block">
@@ -93,142 +93,140 @@
     </nav>
     <!-- Navbar Section End -->
 
-    <!-- About Banner start -->
-    <div class="absolute">
-        <img src="src/assets/images/about-banner.png" alt="...">
-        <div class="absolute top-52 mx-auto container">
-            <h4 class="text-white text-2xl font-bold uppercase">About</h4>
-            <p class="text-white text-lg">Home / About Us</p>
+
+
+    <!-- Layout -->
+    <div class="h-screen max-w-5xl px-2 py-3 mx-auto mt-32 tracking-wide md:px-4 md:mt-44">
+        <!-- Title -->
+        <div class="flex justify-center text-3xl">Frequently Asked Questions</div>
+        <!-- End Title -->
+
+        <!-- Accordion -->
+        <div class="grid gap-3 py-8 text-lg leading-6 text-gray-800 md:gap-8 md:grid-cols-2">
+            <div class="space-y-3">
+                <!-- 1 -->
+                <div x-data="accordion(1)"
+                    class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
+                    <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+                        <div class="flex items-center justify-between">
+                            <span class="tracking-wide">What is x-data ?</span>
+                            <span :class="handleRotate()"
+                                class="transition-transform duration-500 transform fill-current ">
+                                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div x-ref="tab" :style="handleToggle()"
+                        class="relative overflow-hidden transition-all duration-700 max-h-0">
+                        <div class="px-6 pb-4 text-gray-600">
+                            Declare a new Alpine component and its data for a block of HTML </div>
+                    </div>
+                </div>
+                <!-- End 1 -->
+
+                <!-- 2 -->
+                <div x-data="accordion(2)"
+                    class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
+                    <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+                        <div class="flex items-center justify-between">
+                            <span class="tracking-wide">What is x-bind ?</span>
+                            <span :class="handleRotate()"
+                                class="transition-transform duration-500 transform fill-current ">
+                                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div x-ref="tab" :style="handleToggle()"
+                        class="relative overflow-hidden transition-all duration-700 max-h-0">
+                        <div class="px-6 pb-4 text-gray-600">
+                            Dynamically set HTML attributes on an element.
+                        </div>
+                    </div>
+                </div>
+                <!-- End 2 -->
+            </div>
+
+            <div class="space-y-3">
+                <!-- 3 -->
+                <div x-data="accordion(3)"
+                    class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
+                    <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+                        <div class="flex items-center justify-between">
+                            <span class="tracking-wide">What is $store ?</span>
+                            <span :class="handleRotate()"
+                                class="transition-transform duration-500 transform fill-current ">
+                                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div x-ref="tab" :style="handleToggle()"
+                        class="relative overflow-hidden transition-all duration-700 max-h-0">
+                        <div class="px-6 pb-4 text-gray-600">
+                            Access a global store registered using Alpine.store(...)
+                        </div>
+                    </div>
+                </div>
+                <!-- End 3 -->
+
+                <!-- 4 -->
+                <div x-data="accordion(4)"
+                    class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
+                    <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+                        <div class="flex items-center justify-between">
+                            <span class="tracking-wide">What is x-on ?</span>
+                            <span :class="handleRotate()"
+                                class="transition-transform duration-500 transform fill-current ">
+                                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div x-ref="tab" :style="handleToggle()"
+                        class="relative overflow-hidden transition-all duration-700 max-h-0">
+                        <div class="px-6 pb-4 text-gray-600">
+                            Listen for browser events on an element
+                        </div>
+                    </div>
+                </div>
+                <!-- End 4 -->
+            </div>
         </div>
-    </div>
-    <!-- About Banner end -->
-
-
-
-
-
-
-
-<!-- Layout -->
-<div class="h-screen max-w-5xl px-2 py-3 mx-auto mt-32 tracking-wide md:px-4 md:mt-44">
-    <!-- Title -->
-    <div class="flex justify-center text-3xl">Frequently Asked Questions</div>
-    <!-- End Title -->
-
-    <!-- Accordion -->
-    <div class="grid gap-3 py-8 text-lg leading-6 text-gray-800 md:gap-8 md:grid-cols-2">
-        <div class="space-y-3">
-        <!-- 1 -->
-        <div x-data="accordion(1)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
-            <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
-            <div class="flex items-center justify-between">
-                <span class="tracking-wide">What is x-data ?</span>
-                <span :class="handleRotate()" class="transition-transform duration-500 transform fill-current ">
-                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                </svg>
-                </span>
-            </div>
-            </div>
-
-            <div x-ref="tab" :style="handleToggle()" class="relative overflow-hidden transition-all duration-700 max-h-0">
-            <div class="px-6 pb-4 text-gray-600">
-                Declare a new Alpine component and its data for a block of HTML </div>
-            </div>
-        </div>
-        <!-- End 1 -->
-
-        <!-- 2 -->
-        <div x-data="accordion(2)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
-            <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
-            <div class="flex items-center justify-between">
-                <span class="tracking-wide">What is x-bind ?</span>
-                <span :class="handleRotate()" class="transition-transform duration-500 transform fill-current ">
-                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                </svg>
-                </span>
-            </div>
-            </div>
-
-            <div x-ref="tab" :style="handleToggle()" class="relative overflow-hidden transition-all duration-700 max-h-0">
-            <div class="px-6 pb-4 text-gray-600">
-                Dynamically set HTML attributes on an element.
-            </div>
-            </div>
-        </div>
-        <!-- End 2 -->
-        </div>
-
-        <div class="space-y-3">
-        <!-- 3 -->
-        <div x-data="accordion(3)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
-            <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
-            <div class="flex items-center justify-between">
-                <span class="tracking-wide">What is $store ?</span>
-                <span :class="handleRotate()" class="transition-transform duration-500 transform fill-current ">
-                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                </svg>
-                </span>
-            </div>
-            </div>
-
-            <div x-ref="tab" :style="handleToggle()" class="relative overflow-hidden transition-all duration-700 max-h-0">
-            <div class="px-6 pb-4 text-gray-600">
-                Access a global store registered using Alpine.store(...)
-            </div>
-            </div>
-        </div>
-        <!-- End 3 -->
-
-        <!-- 4 -->
-        <div x-data="accordion(4)" class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
-            <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
-            <div class="flex items-center justify-between">
-                <span class="tracking-wide">What is x-on ?</span>
-                <span :class="handleRotate()" class="transition-transform duration-500 transform fill-current ">
-                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                </svg>
-                </span>
-            </div>
-            </div>
-
-            <div x-ref="tab" :style="handleToggle()" class="relative overflow-hidden transition-all duration-700 max-h-0">
-            <div class="px-6 pb-4 text-gray-600">
-                Listen for browser events on an element
-            </div>
-            </div>
-        </div>
-        <!-- End 4 -->
-        </div>
-    </div>
-    <!-- End Accordion -->
+        <!-- End Accordion -->
     </div>
     <!-- End Layout -->
 
 
 
-
-
-
-
-
     <!-- Footer Top Section start -->
-    <div class="bg-black">
+    <div class="bg-black pt-12">
         <div class="mx-auto container px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row items-center justify-around">
-            <div class="flex flex-col items-center lg:items-start mb-6 lg:mb-0"
+            <div class="flex flex-col items-center lg:items-start h-20 mb-6 lg:mb-0"
                 style="background-image: url('/src/assets/images/feature.png')">
-                <h5 class=" md:text-2xl text-md font-bold uppercase tracking-wide mb-1">Sign up for our newsletter
+                <h5 class="my-auto md:text-2xl text-md font-bold uppercase">Sign up for our newsletter
                     to get weekly updates<br> on exclusive offers and discounts!</h5>
             </div>
-            <form class="flex w-full lg:w-auto">
-                <input placeholder="Enter your email..."
-                    class="flex-1 px-6 py-3 text-black bg-black placeholder-gray-400 border-1 border-b hover:border-t-4 border-red-600 rounded-l-md focus:ring-red-500 focus:border-red-500"
-                    type="email">
-                <button
-                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 py-2 bg-red-600 text-white rounded-r-md px-4">
+            <form class="flex w-full lg:w-auto border-b opacity-70 border-red-600">
+                <input placeholder="Enter your email..." class="flex-1 px-6 py-3 bg-black" type="email" />
+                <button class="inline-flex items-center h-10 py-2 bg-red-600 hover:bg-red-700 px-4">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="48" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="text-white">
@@ -241,32 +239,49 @@
     </div>
     <!-- Footer Top Section end -->
 
-
+    
     <!-- Footer Section end -->
     <footer class="bg-black text-white ">
-        <div class="mx-auto container py-12 sm:px-6 lg:px-8">
+        <div class="mx-auto container py-12 sm:px-6 lg:px-8 ">
+            <div class="border-t border-red-700 opacity-50 mb-10"></div>
+            <div class="mb-5">
+                <img src="src/assets/images/logo-red.png" alt="...">
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-8">
                 <div class="lg:col-span-3">
-                    <img src="src/assets/images/logo-red.png" alt="...">
-                    <p class="text-lg lg:mr-20 my-5">
+                    <p class="text-lg lg:mr-48 mb-5 opacity-80">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the
                         industry's stan. Lorem Ipsum is.
                     </p>
                     <div class="mt-4 flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="61" viewBox="0 0 60 61" fill="none">
-                            <g opacity="0.5">
-                                <circle opacity="0.3" cx="30" cy="30.502" r="25" fill="#FF3D24" />
-                                <circle opacity="0.3" cx="30" cy="30.502" r="30" fill="#FF3D24" />
-                                <circle cx="30" cy="30.502" r="20" fill="#FF3D24" />
-                            </g>
-                        </svg>
+                        <span class="relative flex h-10 w-10 items-center justify-center">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                            <span
+                                class="items-center justify-center relative inline-flex rounded-full h-10 w-10 bg-red-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_365_2417)">
+                                        <path
+                                            d="M18.7613 13.866C17.5368 13.866 16.3345 13.6745 15.1952 13.298C14.6369 13.1076 13.9506 13.2822 13.6099 13.6322L11.3611 15.3298C8.75312 13.9377 7.14666 12.3317 5.77354 9.74333L7.42119 7.55312C7.84927 7.12563 8.00281 6.50115 7.81885 5.91521C7.44072 4.7699 7.24864 3.56818 7.24864 2.34318C7.24869 1.45823 6.52875 0.738281 5.64385 0.738281H1.97093C1.08604 0.738281 0.366089 1.45823 0.366089 2.34312C0.366089 12.4864 8.61807 20.7383 18.7613 20.7383C19.6462 20.7383 20.3661 20.0183 20.3661 19.1334V15.4708C20.3661 14.5859 19.6461 13.866 18.7613 13.866Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_365_2417">
+                                            <rect width="20" height="20" fill="white"
+                                                transform="translate(0.366089 0.738281)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                        </span>
                         <span class="ml-2 text-5xl font-bold">(406) 555-0120</span>
                     </div>
                 </div>
                 <div class="lg:col-span-1">
                     <h3 class="text-2xl font-semibold uppercase">Quick Link</h3>
-                    <ul class="mt-4 space-y-2">
+                    <ul class="mt-4 space-y-2 opacity-80">
                         <li><a class="hover:text-red-600" href="#">About</a></li>
                         <li><a class="hover:text-red-600" href="#">Services</a></li>
                         <li><a class="hover:text-red-600" href="#">Pricing</a></li>
@@ -276,7 +291,7 @@
                 </div>
                 <div class="lg:col-span-1">
                     <h3 class="text-2xl font-semibold uppercase">Quick Link</h3>
-                    <ul class="mt-4 space-y-2">
+                    <ul class="mt-4 space-y-2 opacity-80">
                         <li><a class="hover:text-red-600" href="#">Appointment</a></li>
                         <li><a class="hover:text-red-600" href="#">Blog / News</a></li>
                         <li><a class="hover:text-red-600" href="#">FAQ Question</a></li>
@@ -293,7 +308,7 @@
                                     d="M7.83533 0.501953C3.9756 0.501953 0.835327 3.4927 0.835327 7.16863C0.835327 8.27215 1.12502 9.36629 1.67574 10.3368L7.45253 18.2871C7.52943 18.4198 7.67598 18.502 7.83533 18.502C7.99467 18.502 8.14122 18.4198 8.21813 18.2871L13.9971 10.3335C14.5456 9.36629 14.8353 8.27211 14.8353 7.16859C14.8353 3.4927 11.6951 0.501953 7.83533 0.501953ZM7.83533 10.502C5.90546 10.502 4.33535 9.0066 4.33535 7.16863C4.33535 5.33066 5.90546 3.83531 7.83533 3.83531C9.76519 3.83531 11.3353 5.33066 11.3353 7.16863C11.3353 9.0066 9.76519 10.502 7.83533 10.502Z"
                                     fill="white" />
                             </svg>
-                            <span class="ml-2">901 N Pitt Str, Suite 170 <br> Alexandria, NY, USA</span>
+                            <span class="ml-2 opacity-80">901 N Pitt Str, Suite 170 <br> Alexandria, NY, USA</span>
                         </li>
                         <li class="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18"
@@ -319,7 +334,7 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-                            <span class="ml-2">example@email.com</span>
+                            <span class="ml-2 opacity-80">example@email.com</span>
                         </li>
                         <li class="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
@@ -352,47 +367,46 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-                            <span class="ml-2">Sun - Thu: Open 24/7</span>
+                            <span class="ml-2 opacity-80">Sun - Thu: Open 24/7</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="mt-8 border-t border-gray-700 pt-8 flex justify-between items-center">
-                <p class="text-sm text-gray-400">Copyright 2024, All Right reserved</p>
+            <div class="border-t border-red-700 opacity-50 my-10"></div>
+
+
+
+            <div class="flex justify-between items-center">
+                <p class="text-sm text-white opacity-80">Copyright 2024, All Right reserved</p>
                 <div class="flex mt-4 space-x-6 ">
                     <a class="text-gray-400 hover:text-red-600" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="h-6 w-6">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="text-gray-400 hover:text-red-600" href="#">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
                             </path>
-                            <rect width="4" height="12" x="2" y="9"></rect>
-                            <circle cx="4" cy="4" r="2"></circle>
                         </svg>
                     </a>
                     <a class="text-gray-400 hover:text-red-600" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="h-6 w-6">
-                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                        </svg>
-                    </a>
-                    <a class="text-gray-400 hover:text-red-600" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="h-6 w-6">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                         </svg>
                     </a>
                     <a class="text-gray-400 hover:text-red-600" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="h-6 w-6">
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            <polyline points="15 3 21 3 21 9"></polyline>
-                            <line x1="10" x2="21" y1="14" y2="3"></line>
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
                         </svg>
                     </a>
                 </div>
