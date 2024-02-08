@@ -937,7 +937,7 @@
       </div>
    </div>
    <!-- Sponsor slider end -->
-   
+
 
    <!-- Testimonial slider start -->
    <section>
@@ -971,61 +971,7 @@
                </div>
             </div>
          </div>
-         <div class="-mx-6 mt-8 lg:col-span-1 md:col-span-1 lg:mx-0">
-            <div id="keen-slider" class="keen-slider">
-               <div class="keen-slider__slide">
-                  <blockquote class="flex h-96 flex-col justify-between bg-black p-6 shadow-sm sm:p-8 lg:p-12">
-                     <div>
-                        <div class="mt-4">
-                           <p class="text-2xl font-bold text-rose-600 sm:text-3xl">Stayin' Alive</p>
-                           <p class="mt-4 leading-relaxed text-gray-700">
-                              No, Rose, they are not breathing. And they have no arms or legs … Where are they?
-                              You know what? If we come across somebody with no arms or legs, do we bother
-                              resuscitating them? I mean, what quality of life do we have there?
-                           </p>
-                        </div>
-                     </div>
-                     <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                        &mdash; Michael Scott
-                     </footer>
-                  </blockquote>
-               </div>
-               <div class="keen-slider__slide">
-                  <blockquote class="flex h-full flex-col justify-between bg-black p-6 shadow-sm sm:p-8 lg:p-12">
-                     <div>
-                        <div class="mt-4">
-                           <p class="text-2xl font-bold text-rose-600 sm:text-3xl">Stayin' Alive</p>
-                           <p class="mt-4 leading-relaxed text-gray-700">
-                              No, Rose, they are not breathing. And they have no arms or legs … Where are they?
-                              You know what? If we come across somebody with no arms or legs, do we bother
-                              resuscitating them? I mean, what quality of life do we have there?
-                           </p>
-                        </div>
-                     </div>
-                     <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                        &mdash; Michael Scott
-                     </footer>
-                  </blockquote>
-               </div>
-               <div class="keen-slider__slide">
-                  <blockquote class="flex h-full flex-col justify-between bg-black p-6 shadow-sm sm:p-8 lg:p-12">
-                     <div>
-                        <div class="mt-4">
-                           <p class="text-2xl font-bold text-rose-600 sm:text-3xl">Stayin' Alive</p>
-                           <p class="mt-4 leading-relaxed text-gray-700">
-                              No, Rose, they are not breathing. And they have no arms or legs … Where are they?
-                              You know what? If we come across somebody with no arms or legs, do we bother
-                              resuscitating them? I mean, what quality of life do we have there?
-                           </p>
-                        </div>
-                     </div>
-                     <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                        &mdash; Michael Scott
-                     </footer>
-                  </blockquote>
-               </div>
-            </div>
-         </div>
+
       </div>
    </section>
    <!-- Testimonial slider end -->
@@ -1796,44 +1742,6 @@
          index[counter - 1].classList.add("action");
          index[counter - 1].classList.add("font-bold");
       }
-   </script>
-
-   <script type="module">
-      import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
-
-      const keenSlider = new KeenSlider(
-         '#keen-slider',
-         {
-            loop: true,
-            slides: {
-               origin: 'center',
-               perView: 1.25,
-               spacing: 16,
-            },
-            breakpoints: {
-               '(min-width: 1024px)': {
-                  slides: {
-                     origin: 'auto',
-                     perView: 1.5,
-                     spacing: 32,
-                  },
-               },
-            },
-         },
-         []
-      )
-
-      const keenSliderPrevious = document.getElementById('keen-slider-previous')
-      const keenSliderNext = document.getElementById('keen-slider-next')
-
-      const keenSliderPreviousDesktop = document.getElementById('keen-slider-previous-desktop')
-      const keenSliderNextDesktop = document.getElementById('keen-slider-next-desktop')
-
-      keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
-      keenSliderNext.addEventListener('click', () => keenSlider.next())
-
-      keenSliderPreviousDesktop.addEventListener('click', () => keenSlider.prev())
-      keenSliderNextDesktop.addEventListener('click', () => keenSlider.next())
    </script>
 
    <!-- Initialize Swiper -->
