@@ -95,21 +95,16 @@
 
 
 
-    <!-- Layout -->
-    <div class="h-screen max-w-5xl px-2 py-3 mx-auto mt-32 tracking-wide md:px-4 md:mt-44">
-        <!-- Title -->
-        <div class="flex justify-center text-3xl">Frequently Asked Questions</div>
-        <!-- End Title -->
-
-        <!-- Accordion -->
-        <div class="grid gap-3 py-8 text-lg leading-6 text-gray-800 md:gap-8 md:grid-cols-2">
-            <div class="space-y-3">
-                <!-- 1 -->
+    <!-- Accordion section start -->
+    <div class="max-w-screen-xl mx-auto">
+        <div class="grid gap-3 py-8 text-lg leading-6 md:gap-8 md:grid-cols-2">
+            <div class="space-y-5">
                 <div x-data="accordion(1)"
-                    class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
-                    <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+                    class="relative transition-all duration-700 border border-red-400 hover:shadow-2xl">
+                    <div @click="handleClick()" class="w-full p-7 text-left cursor-pointer">
                         <div class="flex items-center justify-between">
-                            <span class="tracking-wide">What is x-data ?</span>
+                            <span class="tracking-wide font-bold">What services do you offer at your auto repair
+                                shop?</span>
                             <span :class="handleRotate()"
                                 class="transition-transform duration-500 transform fill-current ">
                                 <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg"
@@ -123,18 +118,21 @@
 
                     <div x-ref="tab" :style="handleToggle()"
                         class="relative overflow-hidden transition-all duration-700 max-h-0">
-                        <div class="px-6 pb-4 text-gray-600">
-                            Declare a new Alpine component and its data for a block of HTML </div>
+                        <div class="px-6 pb-4 ">
+                            <p class="text-lg text-gray-400">We provide a comprehensive range of auto services,
+                                including but not limited to routine
+                                maintenance, brake repairs, tire services, engine diagnostics, oil changes, suspension
+                                repairs, and more. Our experienced technicians are equipped to handle various automotive
+                                issues.</p>
+                        </div>
                     </div>
                 </div>
-                <!-- End 1 -->
 
-                <!-- 2 -->
                 <div x-data="accordion(2)"
-                    class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
-                    <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+                    class="relative transition-all duration-700 border border-red-400  hover:shadow-2xl">
+                    <div @click="handleClick()" class="w-full p-7 text-left cursor-pointer">
                         <div class="flex items-center justify-between">
-                            <span class="tracking-wide">What is x-bind ?</span>
+                            <span class="tracking-wide font-bold">How often should I get my car serviced?</span>
                             <span :class="handleRotate()"
                                 class="transition-transform duration-500 transform fill-current ">
                                 <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg"
@@ -148,21 +146,21 @@
 
                     <div x-ref="tab" :style="handleToggle()"
                         class="relative overflow-hidden transition-all duration-700 max-h-0">
-                        <div class="px-6 pb-4 text-gray-600">
-                            Dynamically set HTML attributes on an element.
+                        <div class="px-6 pb-4 ">
+                            <p class="text-lg text-gray-400">We provide a comprehensive range of auto services,
+                                including but not limited to routine
+                                maintenance, brake repairs, tire services, engine diagnostics, oil changes, suspension
+                                repairs, and more. Our experienced technicians are equipped to handle various automotive
+                                issues.</p>
                         </div>
                     </div>
                 </div>
-                <!-- End 2 -->
-            </div>
 
-            <div class="space-y-3">
-                <!-- 3 -->
                 <div x-data="accordion(3)"
-                    class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
-                    <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+                    class="relative transition-all duration-700 border border-red-400  hover:shadow-2xl">
+                    <div @click="handleClick()" class="w-full p-7 text-left cursor-pointer">
                         <div class="flex items-center justify-between">
-                            <span class="tracking-wide">What is $store ?</span>
+                            <span class="tracking-wide font-bold">How do I know if my brakes need to be replaced?</span>
                             <span :class="handleRotate()"
                                 class="transition-transform duration-500 transform fill-current ">
                                 <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg"
@@ -176,19 +174,21 @@
 
                     <div x-ref="tab" :style="handleToggle()"
                         class="relative overflow-hidden transition-all duration-700 max-h-0">
-                        <div class="px-6 pb-4 text-gray-600">
-                            Access a global store registered using Alpine.store(...)
+                        <div class="px-6 pb-4 ">
+                            <p class="text-lg text-gray-400">We provide a comprehensive range of auto services,
+                                including but not limited to routine
+                                maintenance, brake repairs, tire services, engine diagnostics, oil changes, suspension
+                                repairs, and more. Our experienced technicians are equipped to handle various automotive
+                                issues.</p>
                         </div>
                     </div>
                 </div>
-                <!-- End 3 -->
 
-                <!-- 4 -->
                 <div x-data="accordion(4)"
-                    class="relative transition-all duration-700 border rounded-xl hover:shadow-2xl">
-                    <div @click="handleClick()" class="w-full p-4 text-left cursor-pointer">
+                    class="relative transition-all duration-700 border border-red-400  hover:shadow-2xl">
+                    <div @click="handleClick()" class="w-full p-7 text-left cursor-pointer">
                         <div class="flex items-center justify-between">
-                            <span class="tracking-wide">What is x-on ?</span>
+                            <span class="tracking-wide font-bold">What does the "Check Engine" light indicate?</span>
                             <span :class="handleRotate()"
                                 class="transition-transform duration-500 transform fill-current ">
                                 <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg"
@@ -202,17 +202,199 @@
 
                     <div x-ref="tab" :style="handleToggle()"
                         class="relative overflow-hidden transition-all duration-700 max-h-0">
-                        <div class="px-6 pb-4 text-gray-600">
-                            Listen for browser events on an element
+                        <div class="px-6 pb-4 ">
+                            <p class="text-lg text-gray-400">We provide a comprehensive range of auto services,
+                                including but not limited to routine
+                                maintenance, brake repairs, tire services, engine diagnostics, oil changes, suspension
+                                repairs, and more. Our experienced technicians are equipped to handle various automotive
+                                issues.</p>
                         </div>
                     </div>
                 </div>
-                <!-- End 4 -->
+
+                <div x-data="accordion(5)"
+                    class="relative transition-all duration-700 border border-red-400  hover:shadow-2xl">
+                    <div @click="handleClick()" class="w-full p-7 text-left cursor-pointer">
+                        <div class="flex items-center justify-between">
+                            <span class="tracking-wide font-bold">What steps can I take to maintain car between
+                                services?</span>
+                            <span :class="handleRotate()"
+                                class="transition-transform duration-500 transform fill-current ">
+                                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div x-ref="tab" :style="handleToggle()"
+                        class="relative overflow-hidden transition-all duration-700 max-h-0">
+                        <div class="px-6 pb-4 ">
+                            <p class="text-lg text-gray-400">We provide a comprehensive range of auto services,
+                                including but not limited to routine
+                                maintenance, brake repairs, tire services, engine diagnostics, oil changes, suspension
+                                repairs, and more. Our experienced technicians are equipped to handle various automotive
+                                issues.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div x-data="accordion(6)"
+                    class="relative transition-all duration-700 border border-red-400  hover:shadow-2xl">
+                    <div @click="handleClick()" class="w-full p-7 text-left cursor-pointer">
+                        <div class="flex items-center justify-between">
+                            <span class="tracking-wide font-bold">Do you provide warranty on your auto repairs?</span>
+                            <span :class="handleRotate()"
+                                class="transition-transform duration-500 transform fill-current ">
+                                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div x-ref="tab" :style="handleToggle()"
+                        class="relative overflow-hidden transition-all duration-700 max-h-0">
+                        <div class="px-6 pb-4 ">
+                            <p class="text-lg text-gray-400">We provide a comprehensive range of auto services,
+                                including but not limited to routine
+                                maintenance, brake repairs, tire services, engine diagnostics, oil changes, suspension
+                                repairs, and more. Our experienced technicians are equipped to handle various automotive
+                                issues.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="relative">
+                    <div>
+                        <img src="src/assets/images/faqs.png" alt="">
+                    </div>
+                    <div class="absolute bottom-20 left-10 space-y-6">
+                        <div class="mt-4 flex items-center">
+                            <span class="relative flex h-10 w-10 items-center justify-center">
+                                <span
+                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                                <span
+                                    class="items-center justify-center relative inline-flex rounded-full h-10 w-10 bg-red-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_365_2417)">
+                                            <path
+                                                d="M18.7613 13.866C17.5368 13.866 16.3345 13.6745 15.1952 13.298C14.6369 13.1076 13.9506 13.2822 13.6099 13.6322L11.3611 15.3298C8.75312 13.9377 7.14666 12.3317 5.77354 9.74333L7.42119 7.55312C7.84927 7.12563 8.00281 6.50115 7.81885 5.91521C7.44072 4.7699 7.24864 3.56818 7.24864 2.34318C7.24869 1.45823 6.52875 0.738281 5.64385 0.738281H1.97093C1.08604 0.738281 0.366089 1.45823 0.366089 2.34312C0.366089 12.4864 8.61807 20.7383 18.7613 20.7383C19.6462 20.7383 20.3661 20.0183 20.3661 19.1334V15.4708C20.3661 14.5859 19.6461 13.866 18.7613 13.866Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_365_2417">
+                                                <rect width="20" height="20" fill="white"
+                                                    transform="translate(0.366089 0.738281)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                            </span>
+                            <span class="ml-2 text-4xl font-bold">(406) 555-0120</span>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <span class="relative flex h-10 w-10 items-center justify-center">
+                                <span
+                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                                <span
+                                    class="items-center justify-center relative inline-flex rounded-full h-10 w-10 bg-red-500">
+                                    <svg class="mt-[2px]" xmlns="http://www.w3.org/2000/svg" width="21" height="17"
+                                        viewBox="0 0 21 17" fill="none">
+                                        <g clip-path="url(#clip0_357_1434)">
+                                            <path
+                                                d="M18.3937 16.4548C18.8433 16.4548 19.2329 16.3064 19.564 16.0133L13.8977 10.3467C13.7617 10.4441 13.63 10.5388 13.5055 10.6288C13.0815 10.9412 12.7373 11.185 12.473 11.3597C12.2088 11.5348 11.8572 11.7132 11.4184 11.8954C10.9792 12.0779 10.5701 12.1688 10.1906 12.1688H10.1795H10.1684C9.7888 12.1688 9.37968 12.0779 8.94057 11.8954C8.50145 11.7132 8.14989 11.5348 7.88591 11.3597C7.62167 11.185 7.2777 10.9412 6.85344 10.6288C6.73521 10.5421 6.60409 10.447 6.46233 10.3452L0.794922 16.0133C1.12604 16.3064 1.51584 16.4548 1.96538 16.4548H18.3937Z"
+                                                fill="white" />
+                                            <path
+                                                d="M1.30704 6.77854C0.883035 6.49586 0.507033 6.17211 0.179688 5.80743V14.4286L5.17396 9.43434C4.17482 8.7368 2.88748 7.85255 1.30704 6.77854Z"
+                                                fill="white" />
+                                            <path
+                                                d="M19.0637 6.77854C17.5436 7.80745 16.2515 8.69323 15.1875 9.43633L20.1798 14.4288V5.80743C19.8597 6.16477 19.4877 6.4883 19.0637 6.77854Z"
+                                                fill="white" />
+                                            <path
+                                                d="M18.3936 0.740479H1.96529C1.39215 0.740479 0.951517 0.934017 0.642836 1.32069C0.333901 1.70755 0.179688 2.19136 0.179688 2.77158C0.179688 3.24025 0.384337 3.74806 0.793455 4.29516C1.20257 4.84204 1.63791 5.2716 2.09924 5.58406C2.35215 5.76275 3.11483 6.29296 4.38728 7.17452C5.07418 7.65053 5.67153 8.06542 6.18486 8.42345C6.62241 8.72831 6.99976 8.99233 7.31131 9.21143C7.34707 9.23652 7.40332 9.27676 7.47797 9.33014C7.5584 9.38791 7.66018 9.46122 7.78575 9.55189C8.02754 9.72676 8.22842 9.86812 8.3884 9.97611C8.54817 10.0841 8.74175 10.2048 8.96884 10.3388C9.19575 10.4726 9.40976 10.5732 9.61064 10.6401C9.81155 10.707 9.99753 10.7406 10.1686 10.7406H10.1797H10.1909C10.3619 10.7406 10.5479 10.707 10.7489 10.6401C10.9497 10.5732 11.1636 10.4728 11.3906 10.3388C11.6175 10.2048 11.8108 10.0839 11.9711 9.97611C12.1311 9.86812 12.332 9.7268 12.5738 9.55189C12.6991 9.46122 12.8009 9.38787 12.8813 9.33032C12.956 9.27672 13.0122 9.23674 13.0482 9.21143C13.2909 9.04255 13.6691 8.77962 14.1776 8.42653C15.1029 7.78364 16.4656 6.83741 18.2714 5.58406C18.8145 5.20472 19.2683 4.74694 19.633 4.21139C19.997 3.67584 20.1795 3.11407 20.1795 2.52626C20.1795 2.03515 20.0025 1.61492 19.6494 1.26492C19.2959 0.915353 18.8772 0.740479 18.3936 0.740479Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_357_1434">
+                                                <rect width="21" height="17" fill="white"
+                                                    transform="translate(0.0898438 0.255371)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                            </span>
+                            <span class="ml-2 text-4xl font-bold">example@email.com</span>
+                        </div>
+                        <div class="ml-10">
+                            <div class="my-4 flex items-center">
+                                <span class="relative flex h-7 w-7 items-center justify-center">
+                                    <span
+                                        class="items-center justify-center relative inline-flex rounded-full h-10 w-10 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="19"
+                                            viewBox="0 0 15 19" fill="none">
+                                            <path
+                                                d="M7.58984 0.342651C3.73012 0.342651 0.589844 3.33339 0.589844 7.00933C0.589844 8.11285 0.879536 9.20699 1.43025 10.1775L7.20705 18.1278C7.28395 18.2605 7.4305 18.3427 7.58984 18.3427C7.74919 18.3427 7.89574 18.2605 7.97264 18.1278L13.7516 10.1742C14.3002 9.20699 14.5898 8.11281 14.5898 7.00929C14.5898 3.33339 11.4496 0.342651 7.58984 0.342651ZM7.58984 10.3427C5.65998 10.3427 4.08986 8.8473 4.08986 7.00933C4.08986 5.17136 5.65998 3.67601 7.58984 3.67601C9.51971 3.67601 11.0898 5.17136 11.0898 7.00933C11.0898 8.8473 9.51971 10.3427 7.58984 10.3427Z"
+                                                fill="#FF3D24" />
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="ml-2 text-xl font-bold">901 N Pitt Str., Suite 170 <br>
+                                    Alexandria, NY, USA</span>
+                            </div>
+                            <div class="my-4 flex items-center">
+                                <span class="relative flex h-7 w-7 items-center justify-center">
+                                    <span
+                                        class="items-center justify-center relative inline-flex rounded-full h-10 w-10 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                            viewBox="0 0 21 21" fill="none">
+                                            <g clip-path="url(#clip0_315_72)">
+                                                <path
+                                                    d="M5.08919 3.50964C5.1776 3.50964 5.26238 3.47452 5.32489 3.41201C5.38741 3.3495 5.42253 3.26472 5.42253 3.17631V1.84298C5.42253 1.75457 5.38741 1.66979 5.32489 1.60727C5.26238 1.54476 5.1776 1.50964 5.08919 1.50964C5.00079 1.50964 4.916 1.54476 4.85349 1.60727C4.79098 1.66979 4.75586 1.75457 4.75586 1.84298V3.17631C4.75586 3.26472 4.79098 3.3495 4.85349 3.41201C4.916 3.47452 5.00079 3.50964 5.08919 3.50964Z"
+                                                    fill="#FF3D24" />
+                                                <path
+                                                    d="M9.08919 3.50964C9.1776 3.50964 9.26238 3.47452 9.3249 3.41201C9.38741 3.3495 9.42253 3.26472 9.42253 3.17631V1.84298C9.42253 1.75457 9.38741 1.66979 9.3249 1.60727C9.26238 1.54476 9.1776 1.50964 9.08919 1.50964C9.00079 1.50964 8.916 1.54476 8.85349 1.60727C8.79098 1.66979 8.75586 1.75457 8.75586 1.84298V3.17631C8.75586 3.26472 8.79098 3.3495 8.85349 3.41201C8.916 3.47452 9.00079 3.50964 9.08919 3.50964Z"
+                                                    fill="#FF3D24" />
+                                                <path
+                                                    d="M17.0892 3.50964C17.1776 3.50964 17.2624 3.47452 17.3249 3.41201C17.3874 3.3495 17.4225 3.26472 17.4225 3.17631V1.84298C17.4225 1.75457 17.3874 1.66979 17.3249 1.60727C17.2624 1.54476 17.1776 1.50964 17.0892 1.50964C17.0008 1.50964 16.916 1.54476 16.8535 1.60727C16.791 1.66979 16.7559 1.75457 16.7559 1.84298V3.17631C16.7559 3.26472 16.791 3.3495 16.8535 3.41201C16.916 3.47452 17.0008 3.50964 17.0892 3.50964Z"
+                                                    fill="#FF3D24" />
+                                                <path
+                                                    d="M13.0892 3.50964C13.1776 3.50964 13.2624 3.47452 13.3249 3.41201C13.3874 3.3495 13.4225 3.26472 13.4225 3.17631V1.84298C13.4225 1.75457 13.3874 1.66979 13.3249 1.60727C13.2624 1.54476 13.1776 1.50964 13.0892 1.50964C13.0008 1.50964 12.916 1.54476 12.8535 1.60727C12.791 1.66979 12.7559 1.75457 12.7559 1.84298V3.17631C12.7559 3.26472 12.791 3.3495 12.8535 3.41201C12.916 3.47452 13.0008 3.50964 13.0892 3.50964Z"
+                                                    fill="#FF3D24" />
+                                                <path d="M12.4229 10.7928L10.7832 12.8425H12.4229V10.7928Z"
+                                                    fill="#FF3D24" />
+                                                <path
+                                                    d="M1.75586 18.5096C1.75639 18.9515 1.93215 19.3751 2.2446 19.6876C2.55705 20 2.98066 20.1758 3.42253 20.1763H18.7559C19.1977 20.1758 19.6213 20 19.9338 19.6876C20.2462 19.3751 20.422 18.9515 20.4225 18.5096V5.50964H1.75586V18.5096ZM14.7559 14.843V13.1763C14.7559 13.0879 14.791 13.0031 14.8535 12.9406C14.916 12.8781 15.0008 12.843 15.0892 12.843C15.1776 12.843 15.2624 12.8781 15.3249 12.9406C15.3874 13.0031 15.4225 13.0879 15.4225 13.1763V13.9043C15.5293 13.8648 15.642 13.8441 15.7559 13.843C16.0211 13.843 16.2754 13.9483 16.463 14.1359C16.6505 14.3234 16.7559 14.5778 16.7559 14.843V15.1763C16.7559 15.2647 16.7207 15.3495 16.6582 15.412C16.5957 15.4745 16.5109 15.5096 16.4225 15.5096C16.3341 15.5096 16.2493 15.4745 16.1868 15.412C16.1243 15.3495 16.0892 15.2647 16.0892 15.1763V14.843C16.0892 14.7546 16.0541 14.6698 15.9916 14.6073C15.9291 14.5448 15.8443 14.5096 15.7559 14.5096C15.6675 14.5096 15.5827 14.5448 15.5202 14.6073C15.4576 14.6698 15.4225 14.7546 15.4225 14.843V15.1763C15.4225 15.2647 15.3874 15.3495 15.3249 15.412C15.2624 15.4745 15.1776 15.5096 15.0892 15.5096C15.0008 15.5096 14.916 15.4745 14.8535 15.412C14.791 15.3495 14.7559 15.2647 14.7559 15.1763V14.843ZM9.82886 12.968L12.4955 9.63464C12.5387 9.58068 12.5975 9.54146 12.6639 9.52241C12.7304 9.50336 12.801 9.50541 12.8662 9.52829C12.9314 9.55117 12.9879 9.59374 13.0278 9.65012C13.0678 9.70649 13.0892 9.77389 13.0892 9.84298V12.843H13.7559C13.8443 12.843 13.9291 12.8781 13.9916 12.9406C14.0541 13.0031 14.0892 13.0879 14.0892 13.1763C14.0892 13.2647 14.0541 13.3495 13.9916 13.412C13.9291 13.4745 13.8443 13.5096 13.7559 13.5096H13.0892V15.1763C13.0892 15.2647 13.0541 15.3495 12.9916 15.412C12.9291 15.4745 12.8443 15.5096 12.7559 15.5096C12.6675 15.5096 12.5827 15.4745 12.5202 15.412C12.4576 15.3495 12.4225 15.2647 12.4225 15.1763V13.5096H10.0892C10.0264 13.5097 9.96484 13.4919 9.91167 13.4585C9.85849 13.4251 9.81584 13.3773 9.78863 13.3207C9.76142 13.2641 9.75076 13.2009 9.75788 13.1385C9.765 13.0761 9.7896 13.017 9.82886 12.968ZM7.35586 9.50964C8.02453 9.50964 9.28919 9.89798 9.28919 11.3666C9.28919 12.7583 7.83219 14.093 6.83486 14.843H9.75586C9.84426 14.843 9.92905 14.8781 9.99156 14.9406C10.0541 15.0031 10.0892 15.0879 10.0892 15.1763C10.0892 15.2647 10.0541 15.3495 9.99156 15.412C9.92905 15.4745 9.84426 15.5096 9.75586 15.5096H5.75586C5.68288 15.5096 5.61191 15.4857 5.55385 15.4415C5.4958 15.3972 5.45386 15.3352 5.43448 15.2648C5.4151 15.1945 5.41935 15.1197 5.44658 15.052C5.4738 14.9843 5.5225 14.9273 5.58519 14.89C6.42986 14.3863 8.62253 12.7713 8.62253 11.3666C8.62253 10.22 7.48419 10.1773 7.35586 10.1763C7.19251 10.1633 7.02824 10.1846 6.87364 10.2389C6.71903 10.2933 6.57751 10.3793 6.45819 10.4917C6.33887 10.604 6.24439 10.74 6.18084 10.8911C6.11729 11.0421 6.08607 11.2048 6.08919 11.3686C6.0884 11.4565 6.05293 11.5405 5.99051 11.6024C5.92808 11.6643 5.84375 11.699 5.75586 11.699C5.66774 11.6985 5.58339 11.6632 5.52123 11.6008C5.45908 11.5383 5.42419 11.4538 5.42419 11.3656C5.41909 11.114 5.46615 10.8641 5.56242 10.6316C5.6587 10.399 5.80209 10.189 5.98356 10.0146C6.16503 9.84024 6.38066 9.70536 6.61684 9.61845C6.85302 9.53154 7.10465 9.49449 7.35586 9.50964Z"
+                                                    fill="#FF3D24" />
+                                                <path
+                                                    d="M18.7559 2.84265H18.0892V3.17598C18.0892 3.4412 17.9838 3.69556 17.7963 3.88309C17.6088 4.07063 17.3544 4.17598 17.0892 4.17598C16.824 4.17598 16.5696 4.07063 16.3821 3.88309C16.1946 3.69556 16.0892 3.4412 16.0892 3.17598V2.84265H14.0892V3.17598C14.0892 3.4412 13.9838 3.69556 13.7963 3.88309C13.6088 4.07063 13.3544 4.17598 13.0892 4.17598C12.824 4.17598 12.5696 4.07063 12.3821 3.88309C12.1946 3.69556 12.0892 3.4412 12.0892 3.17598V2.84265H10.0892V3.17598C10.0892 3.4412 9.98384 3.69556 9.7963 3.88309C9.60876 4.07063 9.35441 4.17598 9.08919 4.17598C8.82398 4.17598 8.56962 4.07063 8.38209 3.88309C8.19455 3.69556 8.08919 3.4412 8.08919 3.17598V2.84265H6.08919V3.17598C6.08919 3.4412 5.98384 3.69556 5.7963 3.88309C5.60876 4.07063 5.35441 4.17598 5.08919 4.17598C4.82398 4.17598 4.56962 4.07063 4.38209 3.88309C4.19455 3.69556 4.08919 3.4412 4.08919 3.17598V2.84265H3.42253C2.98066 2.84318 2.55705 3.01895 2.2446 3.33139C1.93215 3.64384 1.75639 4.06745 1.75586 4.50932V4.84265H20.4225V4.50932C20.422 4.06745 20.2462 3.64384 19.9338 3.33139C19.6213 3.01895 19.1977 2.84318 18.7559 2.84265Z"
+                                                    fill="#FF3D24" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_315_72">
+                                                    <rect width="20" height="20" fill="white"
+                                                        transform="translate(0.589844 0.842651)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="ml-2 text-xl font-bold">(406) 555-0120</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- End Accordion -->
     </div>
-    <!-- End Layout -->
+    <!-- Accordion section end -->
 
 
 
@@ -239,7 +421,7 @@
     </div>
     <!-- Footer Top Section end -->
 
-    
+
     <!-- Footer Section end -->
     <footer class="bg-black text-white ">
         <div class="mx-auto container py-12 sm:px-6 lg:px-8 ">
